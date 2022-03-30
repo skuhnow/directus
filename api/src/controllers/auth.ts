@@ -12,6 +12,7 @@ import {
 	createOAuth2AuthRouter,
 	createOpenIDAuthRouter,
 	createLDAPAuthRouter,
+	createSamlAuthRouter,
 } from '../auth/drivers';
 import { DEFAULT_AUTH_PROVIDER } from '../constants';
 import { getIPFromReq } from '../utils/get-ip-from-req';
@@ -38,6 +39,10 @@ for (const authProvider of authProviders) {
 
 		case 'ldap':
 			authRouter = createLDAPAuthRouter(authProvider.name);
+			break;
+
+		case 'saml':
+			authRouter = createSamlAuthRouter(authProvider.name);
 			break;
 	}
 
