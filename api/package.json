@@ -112,6 +112,7 @@
 		"execa": "^5.1.1",
 		"exifr": "^7.1.2",
 		"express": "^4.17.1",
+		"express-xml-bodyparser": "^0.3.0",
 		"flat": "^5.0.2",
 		"fs-extra": "^10.0.0",
 		"graphql": "^15.5.0",
