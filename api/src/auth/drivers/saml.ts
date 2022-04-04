@@ -15,8 +15,7 @@ export class SamlAuthDriver extends LocalAuthDriver {
 			callbackUrl: config.callbackUrl,
 			entryPoint: config.entryPoint,
 			logoutUrl: config.logoutUrl,
-			cert: config.x509Cert,
-			signatureAlgorithm: 'sha256',
+			cert: config.cert,
 			issuer: config.issuer,
 		});
 	}
@@ -25,12 +24,28 @@ export class SamlAuthDriver extends LocalAuthDriver {
 export function createSamlAuthRouter(providerName: string): Router {
 	const router = Router();
 
+	const bodyParser = require('body-parser');
+	const urlencodedParser = bodyParser.urlencoded({ extended: false });
+
 	router.get(
 		'/',
 		async (req, res) => {
 			const provider = getAuthProvider(providerName) as SamlAuthDriver;
-			const url = await provider.saml.getAuthorizeUrlAsync('', req.headers.host);
+			const url = await provider.saml.getAuthorizeUrlAsync();
 			return res.redirect(url);
+		},
+		respond
+	);
+
+	router.post(
+		'/callback',
+		urlencodedParser,
+		async (req, res) => {
+			const provider = getAuthProvider(providerName) as SamlAuthDriver;
+
+			const { profile } = await provider.saml.validatePostResponseAsync(req.body);
+
+			return res.redirect('https://cms2.prominate-platform.com');
 		},
 		respond
 	);
