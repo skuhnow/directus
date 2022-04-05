@@ -1,4 +1,4 @@
-import { Router } from 'express';
+import express, { Router } from 'express';
 import { LocalAuthDriver } from './local';
 import { respond } from '../../middleware/respond';
 import { AuthDriverOptions, User } from '../../types';
@@ -15,9 +15,11 @@ const { SAML } = require('node-saml');
 export class SamlAuthDriver extends LocalAuthDriver {
 	saml: any;
 	usersService: UsersService;
+	config: Record<string, any>;
 
 	constructor(options: AuthDriverOptions, config: Record<string, any>) {
 		super(options, config);
+		this.config = config;
 
 		this.usersService = new UsersService({ knex: this.knex, schema: this.schema });
 		this.saml = new SAML({
@@ -93,6 +95,11 @@ export class SamlAuthDriver extends LocalAuthDriver {
 	async login(user: User): Promise<void> {
 		return;
 	}
+
+	async logout(user: User): Promise<void> {
+		const target = await this.saml.getLogoutUrlAsync(user);
+		// TODO: SAML Logout
+	}
 }
 
 export function createSamlAuthRouter(providerName: string): Router {
@@ -146,7 +153,7 @@ export function createSamlAuthRouter(providerName: string): Router {
 			res.cookie(env.REFRESH_TOKEN_COOKIE_NAME, refreshToken, COOKIE_OPTIONS);
 			res.locals.payload = payload;
 
-			return res.redirect('https://cms2.prominate-platform.com');
+			return res.redirect(provider.config.appEntryUrl);
 		},
 		respond
 	);
