@@ -1,6 +1,6 @@
 {
 	"name": "@skuhnow/directus-schema",
-	"version": "9.8.1",
+	"version": "9.8.2",
 	"description": "Utility for extracting information about existing DB schema",
 	"main": "dist/index.js",
 	"exports": {
