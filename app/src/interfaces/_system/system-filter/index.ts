@@ -1,4 +1,4 @@
-import { defineInterface } from '@directus/shared/utils';
+import { defineInterface } from '@skuhnow/directus-shared/utils';
 import InterfaceSystemFilter from './system-filter.vue';
 
 export default defineInterface({

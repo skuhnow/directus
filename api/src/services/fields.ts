@@ -1,4 +1,4 @@
-import SchemaInspector from '@directus/schema';
+import SchemaInspector from '@skuhnow/directus-schema';
 import { Knex } from 'knex';
 import { Column } from 'knex-schema-inspector/dist/types/column';
 import { getCache, clearSystemCache } from '../cache';
@@ -12,10 +12,10 @@ import { translateDatabaseError } from '../exceptions/database/translate';
 import { ItemsService } from '../services/items';
 import { PayloadService } from '../services/payload';
 import { AbstractServiceOptions } from '../types';
-import { Field, FieldMeta, RawField, Type, Accountability, SchemaOverview } from '@directus/shared/types';
+import { Field, FieldMeta, RawField, Type, Accountability, SchemaOverview } from '@skuhnow/directus-shared/types';
 import getDefaultValue from '../utils/get-default-value';
 import getLocalType from '../utils/get-local-type';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import { isEqual, isNil } from 'lodash';
 import { RelationsService } from './relations';
 import { getHelpers, Helpers } from '../database/helpers';

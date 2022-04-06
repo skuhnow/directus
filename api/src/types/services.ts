@@ -1,5 +1,5 @@
 import { Knex } from 'knex';
-import { Accountability, Query, SchemaOverview } from '@directus/shared/types';
+import { Accountability, Query, SchemaOverview } from '@skuhnow/directus-shared/types';
 import { Item, PrimaryKey } from './items';
 
 export type AbstractServiceOptions = {

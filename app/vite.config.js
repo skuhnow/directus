@@ -8,8 +8,8 @@ import {
 	getPackageExtensions,
 	getLocalExtensions,
 	generateExtensionsEntry,
-} from '@directus/shared/utils/node';
-import { APP_SHARED_DEPS, APP_EXTENSION_TYPES, APP_EXTENSION_PACKAGE_TYPES } from '@directus/shared/constants';
+} from '@skuhnow/directus-shared/utils/node';
+import { APP_SHARED_DEPS, APP_EXTENSION_TYPES, APP_EXTENSION_PACKAGE_TYPES } from '@skuhnow/directus-shared/constants';
 import hljs from 'highlight.js';
 import hljsGraphQL from './src/utils/hljs-graphql';
 

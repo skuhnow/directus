@@ -1,5 +1,5 @@
-import { defineDisplay } from '@directus/shared/utils';
-import { DisplayConfig } from '@directus/shared/types';
+import { defineDisplay } from '@skuhnow/directus-shared/utils';
+import { DisplayConfig } from '@skuhnow/directus-shared/types';
 import DisplayFormattedValue from './formatted-value.vue';
 
 export default defineDisplay({

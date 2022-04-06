@@ -1,4 +1,4 @@
-import { Relation } from '@directus/shared/types';
+import { Relation } from '@skuhnow/directus-shared/types';
 
 export function getRelationType(getRelationOptions: {
 	relation: Relation;

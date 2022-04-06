@@ -1,5 +1,5 @@
 import { shallowRef, Ref } from 'vue';
-import { LayoutConfig } from '@directus/shared/types';
+import { LayoutConfig } from '@skuhnow/directus-shared/types';
 
 const layoutsRaw: Ref<LayoutConfig[]> = shallowRef([]);
 const layouts: Ref<LayoutConfig[]> = shallowRef([]);

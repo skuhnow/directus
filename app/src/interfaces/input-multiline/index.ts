@@ -1,4 +1,4 @@
-import { defineInterface } from '@directus/shared/utils';
+import { defineInterface } from '@skuhnow/directus-shared/utils';
 import InterfaceInputMultiline from './input-multiline.vue';
 import Preview from './preview.svg?raw';
 

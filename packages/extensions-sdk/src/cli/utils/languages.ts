@@ -1,4 +1,4 @@
-import { EXTENSION_LANGUAGES } from '@directus/shared/constants';
+import { EXTENSION_LANGUAGES } from '@skuhnow/directus-shared/constants';
 import { Language, LanguageShort } from '../types';
 
 export function isLanguage(language: string): language is Language {

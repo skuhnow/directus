@@ -1,4 +1,4 @@
-import { Directus } from '@directus/sdk';
+import { Directus } from '@skuhnow/directus-sdk';
 import { Toolbox } from '../../toolbox';
 import { CLIRuntimeError } from '../exceptions';
 import { InstanceStorage } from '../sdk/storage';

@@ -4,7 +4,7 @@ import { MutationOptions } from '../types';
 import { NotificationsService } from './notifications';
 import { UsersService } from './users';
 import { AuthorizationService } from './authorization';
-import { Accountability } from '@directus/shared/types';
+import { Accountability } from '@skuhnow/directus-shared/types';
 import { getPermissions } from '../utils/get-permissions';
 import { ForbiddenException } from '../exceptions/forbidden';
 import logger from '../logger';

@@ -18,7 +18,7 @@
 <script lang="ts">
 import { useI18n } from 'vue-i18n';
 import { defineComponent, PropType } from 'vue';
-import { Field } from '@directus/shared/types';
+import { Field } from '@skuhnow/directus-shared/types';
 
 export default defineComponent({
 	props: {

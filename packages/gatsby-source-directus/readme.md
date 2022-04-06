@@ -5,7 +5,7 @@ Source plugin for pulling data into Gatsby from a Directus API.
 ## Install
 
 ```
-npm install --save @directus/gatsby-source-directus
+npm install --save @skuhnow/directus-gatsby-source-directus
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ module.exports = {
 
 		// Finally our plugin
 		{
-			resolve: '@directus/gatsby-source-directus',
+			resolve: '@skuhnow/directus-gatsby-source-directus',
 			options: {
 				url: `https://myproject.directus.cloud`, // Fill with your Directus instance address
 				auth: {

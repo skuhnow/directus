@@ -8,7 +8,7 @@ export {
 	defineEndpoint,
 	getFieldsFromTemplate,
 	getRelationType,
-} from '@directus/shared/utils';
+} from '@skuhnow/directus-shared/utils';
 export {
 	useStores,
 	useApi,
@@ -18,4 +18,4 @@ export {
 	useItems,
 	useLayout,
 	useFilterFields,
-} from '@directus/shared/composables';
+} from '@skuhnow/directus-shared/composables';

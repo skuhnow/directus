@@ -57,10 +57,10 @@
 import { get, set, isEmpty, cloneDeep } from 'lodash';
 import { computed, inject, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 import Nodes from './nodes.vue';
 import { getNodeName } from './utils';
-import { getFilterOperatorsForType } from '@directus/shared/utils';
+import { getFilterOperatorsForType } from '@skuhnow/directus-shared/utils';
 import { useFieldsStore } from '@/stores';
 
 interface Props {

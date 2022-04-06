@@ -6,7 +6,7 @@ line interface.
 ## Installation
 
 ```
-npm install -g @directus/cli
+npm install -g @skuhnow/directus-cli
 ```
 
 ## Usage

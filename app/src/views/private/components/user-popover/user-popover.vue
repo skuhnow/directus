@@ -37,7 +37,7 @@ import { getRootPath } from '@/utils/get-root-path';
 import { userName } from '@/utils/user-name';
 import { addTokenToURL } from '@/api';
 import { useRouter } from 'vue-router';
-import { User } from '@directus/shared/types';
+import { User } from '@skuhnow/directus-shared/types';
 
 export default defineComponent({
 	props: {

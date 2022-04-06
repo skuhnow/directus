@@ -166,8 +166,8 @@ export default async function <T>(argv: string[]): Promise<CommandResult<T>> {
 		// TODO: Disabled to discourage usage/tests until final release and decision regarding this
 		// runtime.addPlugins('./node_modules', { matching: 'directus-cli-*', hidden: false });
 		// runtime.addPlugins('./node_modules', { matching: 'directus-*-cli', hidden: false });
-		// runtime.addPlugins('./node_modules', { matching: '@directus/*-cli', hidden: false });
-		// runtime.addPlugins('./node_modules', { matching: '@directus/cli-*', hidden: false });
+		// runtime.addPlugins('./node_modules', { matching: '@skuhnow/directus-*-cli', hidden: false });
+		// runtime.addPlugins('./node_modules', { matching: '@skuhnow/directus-cli-*', hidden: false });
 	}
 
 	const cliExtensionDir = path.resolve(extensionsPath, 'cli');

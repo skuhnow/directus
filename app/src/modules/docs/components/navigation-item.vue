@@ -27,7 +27,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue';
-import { Link, Group } from '@directus/docs';
+import { Link, Group } from '@skuhnow/directus-docs';
 
 export default defineComponent({
 	name: 'NavigationListItem',

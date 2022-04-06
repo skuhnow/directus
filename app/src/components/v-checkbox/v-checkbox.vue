@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import { defineComponent, computed } from 'vue';
-import { useSync } from '@directus/shared/composables';
+import { useSync } from '@skuhnow/directus-shared/composables';
 
 export default defineComponent({
 	props: {

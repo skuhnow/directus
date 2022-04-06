@@ -91,7 +91,7 @@
 
 <script lang="ts" setup>
 import { computed, ref, useSlots } from 'vue';
-import { ShowSelect } from '@directus/shared/types';
+import { ShowSelect } from '@skuhnow/directus-shared/types';
 import { Header, HeaderRaw, Item, ItemSelectEvent, Sort } from './types';
 import TableHeader from './table-header.vue';
 import TableRow from './table-row.vue';

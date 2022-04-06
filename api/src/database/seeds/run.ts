@@ -3,7 +3,7 @@ import yaml from 'js-yaml';
 import { Knex } from 'knex';
 import { isObject } from 'lodash';
 import path from 'path';
-import { Type, Field } from '@directus/shared/types';
+import { Type, Field } from '@skuhnow/directus-shared/types';
 import { getHelpers } from '../helpers';
 
 type TableSeed = {

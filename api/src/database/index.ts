@@ -1,4 +1,4 @@
-import SchemaInspector from '@directus/schema';
+import SchemaInspector from '@skuhnow/directus-schema';
 import { knex, Knex } from 'knex';
 import { performance } from 'perf_hooks';
 import env from '../env';

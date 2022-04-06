@@ -10,8 +10,8 @@ import {
 	Relation,
 	Collection,
 	LocalType,
-} from '@directus/shared/types';
-import { LOCAL_TYPES } from '@directus/shared/constants';
+} from '@skuhnow/directus-shared/types';
+import { LOCAL_TYPES } from '@skuhnow/directus-shared/constants';
 import { computed } from 'vue';
 import { get, set } from 'lodash';
 import { unexpectedError } from '@/utils/unexpected-error';

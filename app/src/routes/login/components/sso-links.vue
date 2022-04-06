@@ -21,7 +21,7 @@ import { defineComponent, ref, watch, toRefs, PropType } from 'vue';
 import { AuthProvider } from '@/types';
 import { AUTH_SSO_DRIVERS } from '@/constants';
 import { getRootPath } from '@/utils/get-root-path';
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 
 export default defineComponent({
 	props: {

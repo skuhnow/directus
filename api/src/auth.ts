@@ -8,7 +8,7 @@ import { InvalidConfigException } from './exceptions';
 import { AuthDriverOptions } from './types';
 import { getConfigFromEnv } from './utils/get-config-from-env';
 import { getSchema } from './utils/get-schema';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 
 const providerNames = toArray(env.AUTH_PROVIDERS);
 

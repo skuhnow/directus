@@ -162,7 +162,7 @@ export default async function createApp(): Promise<express.Application> {
 	});
 
 	if (env.SERVE_APP) {
-		const adminPath = require.resolve('@directus/app');
+		const adminPath = require.resolve('@skuhnow/directus-app');
 		const adminUrl = new Url(env.PUBLIC_URL).addPath('admin');
 
 		// Set the App's base path according to the APIs public URL

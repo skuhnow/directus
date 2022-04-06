@@ -1,4 +1,4 @@
-import { Range } from '@directus/drive';
+import { Range } from '@skuhnow/directus-drive';
 import { Router } from 'express';
 import { pick } from 'lodash';
 import ms from 'ms';

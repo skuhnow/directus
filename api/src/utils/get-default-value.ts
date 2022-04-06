@@ -1,4 +1,4 @@
-import { SchemaOverview } from '@directus/schema/dist/types/overview';
+import { SchemaOverview } from '@skuhnow/directus-schema/dist/types/overview';
 import { Column } from 'knex-schema-inspector/dist/types/column';
 import getLocalType from './get-local-type';
 import logger from '../logger';

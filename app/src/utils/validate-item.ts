@@ -1,6 +1,6 @@
-import { FailedValidationException } from '@directus/shared/exceptions';
-import { Field, LogicalFilterAND } from '@directus/shared/types';
-import { validatePayload } from '@directus/shared/utils';
+import { FailedValidationException } from '@skuhnow/directus-shared/exceptions';
+import { Field, LogicalFilterAND } from '@skuhnow/directus-shared/types';
+import { validatePayload } from '@skuhnow/directus-shared/utils';
 import { flatten, isNil } from 'lodash';
 import { applyConditions } from './apply-conditions';
 

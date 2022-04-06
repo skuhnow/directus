@@ -6,7 +6,7 @@ import os from 'os';
 import { version } from '../../package.json';
 import env from '../env';
 import logger from '../logger';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 
 export async function track(event: string): Promise<void> {
 	if (env.TELEMETRY !== false) {

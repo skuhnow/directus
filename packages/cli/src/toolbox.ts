@@ -1,4 +1,4 @@
-import { IDirectus, QueryMany, QueryOne, TypeMap } from '@directus/sdk';
+import { IDirectus, QueryMany, QueryOne, TypeMap } from '@skuhnow/directus-sdk';
 import { Command } from './command';
 import { IOptions } from './options';
 import { IEvents } from './events';

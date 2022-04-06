@@ -1,7 +1,7 @@
 import Joi from 'joi';
 import { isPlainObject } from 'lodash';
 import { InvalidQueryException } from '../exceptions';
-import { Query } from '@directus/shared/types';
+import { Query } from '@skuhnow/directus-shared/types';
 import { stringify } from 'wellknown';
 
 const querySchema = Joi.object({

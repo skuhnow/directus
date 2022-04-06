@@ -1,5 +1,5 @@
 import { useFieldDetailStore } from './index';
-import { DeepPartial } from '@directus/shared/types';
+import { DeepPartial } from '@skuhnow/directus-shared/types';
 
 export type StateUpdates = DeepPartial<ReturnType<typeof useFieldDetailStore>['$state']>;
 export type State = ReturnType<typeof useFieldDetailStore>['$state'];

@@ -90,7 +90,7 @@ import {
 	GeoJSONSerializer,
 	SimpleGeometry,
 	MultiGeometry,
-} from '@directus/shared/types';
+} from '@skuhnow/directus-shared/types';
 import getSetting from '@/utils/get-setting';
 import { snakeCase, isEqual, debounce } from 'lodash';
 import { getMapStyle } from './style';

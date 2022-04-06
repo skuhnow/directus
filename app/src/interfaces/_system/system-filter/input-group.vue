@@ -67,7 +67,7 @@ import { useFieldsStore } from '@/stores';
 import { useI18n } from 'vue-i18n';
 import { clone, get } from 'lodash';
 import InputComponent from './input-component.vue';
-import { FieldFilter } from '@directus/shared/types';
+import { FieldFilter } from '@skuhnow/directus-shared/types';
 import { fieldToFilter, getComparator, getField } from './utils';
 import { translate } from '@/utils/translate-object-values';
 

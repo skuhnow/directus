@@ -1,4 +1,4 @@
-import { Panel } from '@directus/shared/types';
+import { Panel } from '@skuhnow/directus-shared/types';
 
 export type Dashboard = {
 	id: string;

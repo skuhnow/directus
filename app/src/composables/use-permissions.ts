@@ -1,9 +1,9 @@
 import { usePermissionsStore, useUserStore } from '@/stores';
-import { Field } from '@directus/shared/types';
+import { Field } from '@skuhnow/directus-shared/types';
 import { computed, ComputedRef, Ref } from 'vue';
 import { cloneDeep } from 'lodash';
 import { isAllowed } from '../utils/is-allowed';
-import { useCollection } from '@directus/shared/composables';
+import { useCollection } from '@skuhnow/directus-shared/composables';
 
 type UsablePermissions = {
 	createAllowed: ComputedRef<boolean>;

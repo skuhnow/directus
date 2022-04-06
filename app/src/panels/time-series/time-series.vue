@@ -10,7 +10,7 @@ import { adjustDate } from '@/utils/adjust-date';
 import { useI18n } from 'vue-i18n';
 import { isNil } from 'lodash';
 import { useFieldsStore } from '@/stores';
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 import { abbreviateNumber } from '@/utils/abbreviate-number';
 import { getEndpoint } from '@/utils/get-endpoint';
 import { addWeeks } from 'date-fns';

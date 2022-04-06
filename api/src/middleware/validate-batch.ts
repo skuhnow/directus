@@ -1,7 +1,7 @@
 import { RequestHandler } from 'express';
 import Joi from 'joi';
 import { InvalidPayloadException } from '../exceptions';
-import { FailedValidationException } from '@directus/shared/exceptions';
+import { FailedValidationException } from '@skuhnow/directus-shared/exceptions';
 import asyncHandler from '../utils/async-handler';
 import { sanitizeQuery } from '../utils/sanitize-query';
 

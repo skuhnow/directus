@@ -33,7 +33,7 @@ import {
 	StringValueNode,
 	validate,
 } from 'graphql';
-import { Filter, SchemaOverview } from '@directus/shared/types';
+import { Filter, SchemaOverview } from '@skuhnow/directus-shared/types';
 import {
 	GraphQLJSON,
 	InputTypeComposer,
@@ -49,10 +49,10 @@ import ms from 'ms';
 import { getCache, clearSystemCache } from '../cache';
 import getDatabase from '../database';
 import env from '../env';
-import { BaseException } from '@directus/shared/exceptions';
+import { BaseException } from '@skuhnow/directus-shared/exceptions';
 import { ForbiddenException, GraphQLValidationException, InvalidPayloadException } from '../exceptions';
 import { getExtensionManager } from '../extensions';
-import { Accountability, Query, Aggregate } from '@directus/shared/types';
+import { Accountability, Query, Aggregate } from '@skuhnow/directus-shared/types';
 import { AbstractServiceOptions, Action, GraphQLParams, Item } from '../types';
 import { getGraphQLType } from '../utils/get-graphql-type';
 import { reduceSchema } from '../utils/reduce-schema';

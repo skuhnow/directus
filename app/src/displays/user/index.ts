@@ -1,4 +1,4 @@
-import { defineDisplay } from '@directus/shared/utils';
+import { defineDisplay } from '@skuhnow/directus-shared/utils';
 import DisplayUser from './user.vue';
 
 export default defineDisplay({

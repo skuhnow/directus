@@ -24,7 +24,7 @@ import {
 	AuthorizationRequired,
 	WrongKeyPath,
 	Range,
-} from '@directus/drive';
+} from '@skuhnow/directus-drive';
 
 import path from 'path';
 

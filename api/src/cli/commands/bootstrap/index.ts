@@ -8,7 +8,7 @@ import { getSchema } from '../../../utils/get-schema';
 import { RolesService, UsersService, SettingsService } from '../../../services';
 
 import getDatabase, { isInstalled, validateDatabaseConnection, hasDatabaseConnection } from '../../../database';
-import { SchemaOverview } from '@directus/shared/types';
+import { SchemaOverview } from '@skuhnow/directus-shared/types';
 import { defaultAdminRole, defaultAdminUser } from '../../utils/defaults';
 
 export default async function bootstrap({ skipAdminInit }: { skipAdminInit?: boolean }): Promise<void> {

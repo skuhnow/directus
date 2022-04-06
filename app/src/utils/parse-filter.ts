@@ -1,7 +1,7 @@
 import { useUserStore } from '@/stores';
-import { Accountability } from '@directus/shared/types';
-import { parseFilter as parseFilterShared } from '@directus/shared/utils';
-import { Filter } from '@directus/shared/types';
+import { Accountability } from '@skuhnow/directus-shared/types';
+import { parseFilter as parseFilterShared } from '@skuhnow/directus-shared/utils';
+import { Filter } from '@skuhnow/directus-shared/types';
 
 export function parseFilter(filter: Filter | null): Filter {
 	const userStore = useUserStore();

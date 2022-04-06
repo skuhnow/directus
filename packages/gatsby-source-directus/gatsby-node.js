@@ -1,6 +1,6 @@
 const ms = require('ms');
 const chalk = require('chalk');
-const { Directus } = require('@directus/sdk');
+const { Directus } = require('@skuhnow/directus-sdk');
 const { sourceNodes, createSchemaCustomization } = require('gatsby-source-graphql/gatsby-node');
 const { createRemoteFileNode } = require('gatsby-source-filesystem');
 

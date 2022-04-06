@@ -47,8 +47,8 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
-import { ValidationError, Field } from '@directus/shared/types';
-import formatTitle from '@directus/format-title';
+import { ValidationError, Field } from '@skuhnow/directus-shared/types';
+import formatTitle from '@skuhnow/directus-format-title';
 
 interface Props {
 	validationErrors: ValidationError[];

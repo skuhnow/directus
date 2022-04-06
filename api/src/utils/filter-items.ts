@@ -1,4 +1,4 @@
-import { Query } from '@directus/shared/types';
+import { Query } from '@skuhnow/directus-shared/types';
 import generateJoi from './generate-joi';
 
 /*

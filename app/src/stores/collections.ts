@@ -1,12 +1,12 @@
 import api from '@/api';
 import { i18n } from '@/lang';
-import { Collection as CollectionRaw, DeepPartial, Field } from '@directus/shared/types';
+import { Collection as CollectionRaw, DeepPartial, Field } from '@skuhnow/directus-shared/types';
 import { Collection } from '@/types';
-import { getCollectionType } from '@directus/shared/utils';
+import { getCollectionType } from '@skuhnow/directus-shared/utils';
 import { notEmpty } from '@/utils/is-empty/';
 import { notify } from '@/utils/notify';
 import { unexpectedError } from '@/utils/unexpected-error';
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 import { defineStore } from 'pinia';
 import { COLLECTIONS_DENY_LIST } from '@/constants';
 import { isEqual, orderBy, omit } from 'lodash';

@@ -1,5 +1,5 @@
-import { defineDisplay } from '@directus/shared/utils';
-import { TYPES, LOCAL_TYPES } from '@directus/shared/constants';
+import { defineDisplay } from '@skuhnow/directus-shared/utils';
+import { TYPES, LOCAL_TYPES } from '@skuhnow/directus-shared/constants';
 
 export default defineDisplay({
 	id: 'raw',

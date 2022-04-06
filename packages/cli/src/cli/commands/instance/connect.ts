@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { Directus } from '@directus/sdk';
+import { Directus } from '@skuhnow/directus-sdk';
 import { InstanceConfiguration } from '../../../config';
 import { command } from '../../../core/command';
 import { CLIRuntimeError } from '../../../core/exceptions';

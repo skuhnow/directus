@@ -82,7 +82,7 @@
 <script lang="ts">
 import { useI18n } from 'vue-i18n';
 import { defineComponent, PropType, ref, computed, reactive } from 'vue';
-import { Preset } from '@directus/shared/types';
+import { Preset } from '@skuhnow/directus-shared/types';
 import { useUserStore, usePresetsStore } from '@/stores';
 import { unexpectedError } from '@/utils/unexpected-error';
 import { useRoute, useRouter } from 'vue-router';

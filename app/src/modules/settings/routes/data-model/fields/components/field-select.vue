@@ -147,11 +147,11 @@ import { cloneDeep } from 'lodash';
 import { getLocalTypeForField } from '../../get-local-type';
 import { notify } from '@/utils/notify';
 import { unexpectedError } from '@/utils/unexpected-error';
-import { Field } from '@directus/shared/types';
+import { Field } from '@skuhnow/directus-shared/types';
 import FieldSelectMenu from './field-select-menu.vue';
 import hideDragImage from '@/utils/hide-drag-image';
 import Draggable from 'vuedraggable';
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 
 export default defineComponent({
 	name: 'FieldSelect',

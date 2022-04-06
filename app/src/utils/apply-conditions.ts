@@ -1,6 +1,6 @@
-import { Field } from '@directus/shared/types';
+import { Field } from '@skuhnow/directus-shared/types';
 import { parseFilter } from '@/utils/parse-filter';
-import { validatePayload } from '@directus/shared/utils';
+import { validatePayload } from '@skuhnow/directus-shared/utils';
 import { merge } from 'lodash';
 
 export function applyConditions(item: Record<string, any>, field: Field) {

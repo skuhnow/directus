@@ -3,7 +3,7 @@ import getDatabase from '../database';
 import { systemCollectionRows } from '../database/system-data/collections';
 import { ForbiddenException, InvalidPayloadException } from '../exceptions';
 import { AbstractServiceOptions, PrimaryKey } from '../types';
-import { Accountability, SchemaOverview } from '@directus/shared/types';
+import { Accountability, SchemaOverview } from '@skuhnow/directus-shared/types';
 import emitter from '../emitter';
 
 export class UtilsService {

@@ -1,4 +1,4 @@
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import env from '../env';
 
 interface AuthProvider {

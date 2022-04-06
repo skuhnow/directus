@@ -1,4 +1,4 @@
-import { IStorage } from '@directus/sdk';
+import { IStorage } from '@skuhnow/directus-sdk';
 import { IConfiguration, SystemConfiguration } from '../../config';
 
 export class InstanceStorage implements IStorage {

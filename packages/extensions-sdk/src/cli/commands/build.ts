@@ -18,9 +18,14 @@ import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
 import styles from 'rollup-plugin-styles';
 import vue from 'rollup-plugin-vue';
-import { EXTENSION_PKG_KEY, EXTENSION_TYPES, APP_SHARED_DEPS, API_SHARED_DEPS } from '@directus/shared/constants';
-import { isAppExtension, isExtension, validateExtensionManifest } from '@directus/shared/utils';
-import { ExtensionManifestRaw, ExtensionType } from '@directus/shared/types';
+import {
+	EXTENSION_PKG_KEY,
+	EXTENSION_TYPES,
+	APP_SHARED_DEPS,
+	API_SHARED_DEPS,
+} from '@skuhnow/directus-shared/constants';
+import { isAppExtension, isExtension, validateExtensionManifest } from '@skuhnow/directus-shared/utils';
+import { ExtensionManifestRaw, ExtensionType } from '@skuhnow/directus-shared/types';
 import log from '../utils/logger';
 import { getLanguageFromPath, isLanguage } from '../utils/languages';
 import { Language } from '../types';

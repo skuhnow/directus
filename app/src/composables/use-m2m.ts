@@ -1,6 +1,6 @@
-import { useCollection } from '@directus/shared/composables';
+import { useCollection } from '@skuhnow/directus-shared/composables';
 import { useCollectionsStore, useRelationsStore } from '@/stores/';
-import { Field, Relation } from '@directus/shared/types';
+import { Field, Relation } from '@skuhnow/directus-shared/types';
 import { Collection } from '@/types';
 import { computed, ComputedRef, Ref } from 'vue';
 

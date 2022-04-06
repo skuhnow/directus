@@ -12,7 +12,7 @@
 <script lang="ts">
 import { defineComponent, ref, PropType, computed, watchEffect } from 'vue';
 import api from '@/api';
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 import { useI18n } from 'vue-i18n';
 import { abbreviateNumber } from '@/utils/abbreviate-number';
 import { isNil } from 'lodash';

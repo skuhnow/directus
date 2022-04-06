@@ -1,7 +1,7 @@
 import { UsersService, MailService } from '.';
 import { AbstractServiceOptions, PrimaryKey, MutationOptions } from '../types';
 import { ItemsService } from './items';
-import { Notification } from '@directus/shared/types';
+import { Notification } from '@skuhnow/directus-shared/types';
 import { md } from '../utils/md';
 
 export class NotificationsService extends ItemsService {

@@ -1,6 +1,6 @@
 import { computed } from 'vue';
 import { useFieldsStore } from '@/stores';
-import { definePanel } from '@directus/shared/utils';
+import { definePanel } from '@skuhnow/directus-shared/utils';
 import PanelMetric from './metric.vue';
 
 export default definePanel({

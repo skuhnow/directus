@@ -1,18 +1,18 @@
-import { defineLayout } from '@directus/shared/utils';
+import { defineLayout } from '@skuhnow/directus-shared/utils';
 import CardsLayout from './cards.vue';
 import CardsOptions from './options.vue';
 import CardsActions from './actions.vue';
 
 import { useI18n } from 'vue-i18n';
 import { toRefs, computed, ref } from 'vue';
-import { useCollection } from '@directus/shared/composables';
-import { useItems } from '@directus/shared/composables';
-import { getFieldsFromTemplate } from '@directus/shared/utils';
+import { useCollection } from '@skuhnow/directus-shared/composables';
+import { useItems } from '@skuhnow/directus-shared/composables';
+import { getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import { useRelationsStore } from '@/stores/';
 
 import adjustFieldsForDisplays from '@/utils/adjust-fields-for-displays';
 import { clone } from 'lodash';
-import { useSync } from '@directus/shared/composables';
+import { useSync } from '@skuhnow/directus-shared/composables';
 import { LayoutOptions, LayoutQuery } from './types';
 import { syncRefProperty } from '@/utils/sync-ref-property';
 

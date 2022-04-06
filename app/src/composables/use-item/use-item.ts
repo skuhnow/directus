@@ -1,5 +1,5 @@
 import api from '@/api';
-import { useCollection } from '@directus/shared/composables';
+import { useCollection } from '@skuhnow/directus-shared/composables';
 import { useFieldsStore, useRelationsStore } from '@/stores/';
 import { VALIDATION_TYPES } from '@/constants';
 import { i18n } from '@/lang';

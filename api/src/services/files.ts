@@ -1,4 +1,4 @@
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 import axios, { AxiosResponse } from 'axios';
 import exifr from 'exifr';
 import { clone } from 'lodash';
@@ -14,7 +14,7 @@ import { ForbiddenException, ServiceUnavailableException } from '../exceptions';
 import logger from '../logger';
 import storage from '../storage';
 import { AbstractServiceOptions, File, PrimaryKey, MutationOptions } from '../types';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import { ItemsService } from './items';
 import net from 'net';
 import os from 'os';

@@ -141,13 +141,13 @@
 import { useI18n } from 'vue-i18n';
 import { defineComponent, computed, PropType, ref, watch } from 'vue';
 import { useRelationsStore, useCollectionsStore, useFieldsStore } from '@/stores';
-import { Relation } from '@directus/shared/types';
+import { Relation } from '@skuhnow/directus-shared/types';
 import { Collection } from '@/types';
 import DrawerCollection from '@/views/private/components/drawer-collection/';
 import DrawerItem from '@/views/private/components/drawer-item/';
 import api from '@/api';
 import { unexpectedError } from '@/utils/unexpected-error';
-import { getFieldsFromTemplate } from '@directus/shared/utils';
+import { getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import { isPlainObject, cloneDeep, isEqual } from 'lodash';
 import { getEndpoint } from '@/utils/get-endpoint';
 import { hideDragImage } from '@/utils/hide-drag-image';

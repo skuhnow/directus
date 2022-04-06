@@ -59,7 +59,7 @@ import { computed, defineComponent, PropType, Ref, ref, toRefs, watch, unref } f
 import { useFieldsStore, useUserStore } from '@/stores/';
 import { useI18n } from 'vue-i18n';
 import api from '@/api';
-import { useCollection } from '@directus/shared/composables';
+import { useCollection } from '@skuhnow/directus-shared/composables';
 import { unexpectedError } from '@/utils/unexpected-error';
 import { cloneDeep, isEqual, assign } from 'lodash';
 import { notEmpty } from '@/utils/is-empty';

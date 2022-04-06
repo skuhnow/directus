@@ -12,7 +12,7 @@ import { createRateLimiter } from '../rate-limiter';
 import { ActivityService } from './activity';
 import { TFAService } from './tfa';
 import { AbstractServiceOptions, Action, Session, User, DirectusTokenPayload, LoginResult } from '../types';
-import { Accountability, SchemaOverview } from '@directus/shared/types';
+import { Accountability, SchemaOverview } from '@skuhnow/directus-shared/types';
 import { SettingsService } from './settings';
 import { clone, cloneDeep } from 'lodash';
 import { performance } from 'perf_hooks';

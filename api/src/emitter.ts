@@ -1,4 +1,4 @@
-import { ActionHandler, EventContext, FilterHandler, InitHandler } from '@directus/shared/types';
+import { ActionHandler, EventContext, FilterHandler, InitHandler } from '@skuhnow/directus-shared/types';
 import { EventEmitter2 } from 'eventemitter2';
 import logger from './logger';
 

@@ -1,4 +1,4 @@
-# @directus/drive
+# @skuhnow/directus-drive
 
 Object storage abstraction layer.
 

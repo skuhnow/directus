@@ -132,7 +132,7 @@ import useEdit from '../list-m2m/use-edit';
 import useSelection from '../list-m2m/use-selection';
 import useSort from '../list-m2m/use-sort';
 import usePermissions from '../list-m2m/use-permissions';
-import { getFieldsFromTemplate } from '@directus/shared/utils';
+import { getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import adjustFieldsForDisplays from '@/utils/adjust-fields-for-displays';
 import { getRootPath } from '@/utils/get-root-path';
 import { addTokenToURL } from '@/api';

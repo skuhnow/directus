@@ -3,7 +3,7 @@ import yargs from 'yargs';
 import { marked } from 'marked';
 import TerminalRenderer from 'marked-terminal';
 import stripAnsi from 'strip-ansi';
-import title from '@directus/format-title';
+import title from '@skuhnow/directus-format-title';
 
 // @ts-ignore
 import cliui from 'cliui';

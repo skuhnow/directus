@@ -1,4 +1,4 @@
-# @directus/shared
+# @skuhnow/directus-shared
 
 Code shared between all directus packages.
 

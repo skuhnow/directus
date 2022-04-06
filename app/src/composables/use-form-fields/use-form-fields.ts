@@ -1,6 +1,6 @@
 import { FormField } from '@/components/v-form/types';
 import { getInterface } from '@/interfaces';
-import { Field } from '@directus/shared/types';
+import { Field } from '@skuhnow/directus-shared/types';
 import { getDefaultInterfaceForType } from '@/utils/get-default-interface-for-type';
 import { clone, orderBy } from 'lodash';
 import { computed, ComputedRef, Ref } from 'vue';

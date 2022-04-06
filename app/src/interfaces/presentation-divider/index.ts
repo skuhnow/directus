@@ -1,4 +1,4 @@
-import { defineInterface } from '@directus/shared/utils';
+import { defineInterface } from '@skuhnow/directus-shared/utils';
 import InterfacePresentationDivider from './presentation-divider.vue';
 import PreviewSVG from './preview.svg?raw';
 

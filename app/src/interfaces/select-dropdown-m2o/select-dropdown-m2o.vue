@@ -90,17 +90,17 @@
 import { useI18n } from 'vue-i18n';
 import { defineComponent, computed, ref, toRefs, watch, PropType, inject } from 'vue';
 import { useCollectionsStore, useRelationsStore } from '@/stores/';
-import { useCollection } from '@directus/shared/composables';
-import { getFieldsFromTemplate } from '@directus/shared/utils';
+import { useCollection } from '@skuhnow/directus-shared/composables';
+import { getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import api from '@/api';
 import DrawerItem from '@/views/private/components/drawer-item';
 import DrawerCollection from '@/views/private/components/drawer-collection';
 import { unexpectedError } from '@/utils/unexpected-error';
 import adjustFieldsForDisplays from '@/utils/adjust-fields-for-displays';
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 import { parseFilter } from '@/utils/parse-filter';
 import { render } from 'micromustache';
-import { deepMap } from '@directus/shared/utils';
+import { deepMap } from '@skuhnow/directus-shared/utils';
 import { merge } from 'lodash';
 
 /**

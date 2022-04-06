@@ -9,7 +9,7 @@
 import { defineComponent, PropType, computed } from 'vue';
 import { flatten } from 'lodash';
 import { remove as removeDiacritics } from 'diacritics';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 
 type HighlightPart = {
 	text: string;

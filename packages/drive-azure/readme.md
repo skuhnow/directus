@@ -1,3 +1,3 @@
-# @directus/drive-azure
+# @skuhnow/directus-drive-azure
 
-Azure storage layer for `@directus/drive`
+Azure storage layer for `@skuhnow/directus-drive`

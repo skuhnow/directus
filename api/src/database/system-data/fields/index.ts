@@ -1,8 +1,8 @@
 import fse from 'fs-extra';
 import { merge } from 'lodash';
 import path from 'path';
-import formatTitle from '@directus/format-title';
-import { FieldMeta } from '@directus/shared/types';
+import formatTitle from '@skuhnow/directus-format-title';
+import { FieldMeta } from '@skuhnow/directus-shared/types';
 import { getAuthProviders } from '../../../utils/get-auth-providers';
 import { requireYAML } from '../../../utils/require-yaml';
 

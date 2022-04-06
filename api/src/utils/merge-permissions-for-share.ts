@@ -1,4 +1,4 @@
-import { Permission, Accountability, Filter, SchemaOverview } from '@directus/shared/types';
+import { Permission, Accountability, Filter, SchemaOverview } from '@skuhnow/directus-shared/types';
 
 import { assign, set, uniq } from 'lodash';
 import { mergePermissions } from './merge-permissions';

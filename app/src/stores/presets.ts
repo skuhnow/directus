@@ -1,6 +1,6 @@
 import api from '@/api';
 import { useUserStore } from '@/stores/';
-import { Preset } from '@directus/shared/types';
+import { Preset } from '@skuhnow/directus-shared/types';
 import { cloneDeep, merge, orderBy } from 'lodash';
 import { nanoid } from 'nanoid';
 import { defineStore } from 'pinia';

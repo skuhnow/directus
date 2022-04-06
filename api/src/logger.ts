@@ -4,7 +4,7 @@ import pinoHTTP, { stdSerializers } from 'pino-http';
 import { getConfigFromEnv } from './utils/get-config-from-env';
 import { URL } from 'url';
 import env from './env';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 
 const pinoOptions: LoggerOptions = {
 	level: env.LOG_LEVEL || 'info',

@@ -1,6 +1,6 @@
-import { SchemaOverview } from '@directus/schema/dist/types/overview';
+import { SchemaOverview } from '@skuhnow/directus-schema/dist/types/overview';
 import { Column } from 'knex-schema-inspector/dist/types/column';
-import { FieldMeta, Type } from '@directus/shared/types';
+import { FieldMeta, Type } from '@skuhnow/directus-shared/types';
 
 const localTypeMap: Record<string, Type | 'unknown'> = {
 	// Shared

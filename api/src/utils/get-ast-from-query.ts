@@ -5,7 +5,7 @@
 import { Knex } from 'knex';
 import { cloneDeep, mapKeys, omitBy, uniq } from 'lodash';
 import { AST, FieldNode, NestedCollectionNode } from '../types';
-import { Query, PermissionsAction, Accountability, SchemaOverview } from '@directus/shared/types';
+import { Query, PermissionsAction, Accountability, SchemaOverview } from '@skuhnow/directus-shared/types';
 import { getRelationType } from '../utils/get-relation-type';
 
 type GetASTOptions = {

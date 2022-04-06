@@ -1,5 +1,5 @@
 import { stringify as geojsonToWKT, GeoJSONGeometry } from 'wellknown';
-import { Field, RawField } from '@directus/shared/types';
+import { Field, RawField } from '@skuhnow/directus-shared/types';
 import { DatabaseHelper } from '../types';
 import { Knex } from 'knex';
 

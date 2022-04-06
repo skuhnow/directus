@@ -39,7 +39,7 @@ import { useAppStore } from '@/stores';
 import { LogoutReason } from '@/auth';
 import { AUTH_SSO_DRIVERS } from '@/constants';
 import { unexpectedError } from '@/utils/unexpected-error';
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 import { DEFAULT_AUTH_PROVIDER } from '@/constants';
 
 export default defineComponent({

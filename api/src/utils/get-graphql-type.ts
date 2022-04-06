@@ -9,7 +9,7 @@ import {
 } from 'graphql';
 import { GraphQLJSON } from 'graphql-compose';
 import { GraphQLDate, GraphQLGeoJSON } from '../services/graphql';
-import { Type } from '@directus/shared/types';
+import { Type } from '@skuhnow/directus-shared/types';
 
 export function getGraphQLType(localType: Type | 'alias' | 'unknown'): GraphQLScalarType | GraphQLList<GraphQLType> {
 	switch (localType) {

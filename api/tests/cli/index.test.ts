@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { Extension, HookConfig } from '@directus/shared/types';
+import { Extension, HookConfig } from '@skuhnow/directus-shared/types';
 import { createCli } from '../../src/cli/index';
 
 jest.mock('../../src/env', () => ({
@@ -14,7 +14,7 @@ jest.mock('../../src/env', () => ({
 	DB_PASSWORD: 'psql1234',
 }));
 
-jest.mock('@directus/shared/utils/node/get-extensions', () => ({
+jest.mock('@skuhnow/directus-shared/utils/node/get-extensions', () => ({
 	getPackageExtensions: jest.fn(() => Promise.resolve([])),
 	getLocalExtensions: jest.fn(() => Promise.resolve([customCliExtension])),
 }));

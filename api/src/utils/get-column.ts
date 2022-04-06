@@ -1,6 +1,6 @@
 import { Knex } from 'knex';
 import { getHelpers } from '../database/helpers';
-import { REGEX_BETWEEN_PARENS } from '@directus/shared/constants';
+import { REGEX_BETWEEN_PARENS } from '@skuhnow/directus-shared/constants';
 import { applyFunctionToColumnName } from './apply-function-to-column-name';
 
 /**

@@ -7,7 +7,7 @@ import env from '../../env';
 import { InvalidPayloadException } from '../../exceptions';
 import logger from '../../logger';
 import { AbstractServiceOptions } from '../../types';
-import { Accountability, SchemaOverview } from '@directus/shared/types';
+import { Accountability, SchemaOverview } from '@skuhnow/directus-shared/types';
 import getMailer from '../../mailer';
 import { Transporter, SendMailOptions } from 'nodemailer';
 import { Url } from '../../utils/url';

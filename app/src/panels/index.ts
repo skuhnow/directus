@@ -1,5 +1,5 @@
 import { shallowRef, Ref } from 'vue';
-import { PanelConfig } from '@directus/shared/types';
+import { PanelConfig } from '@skuhnow/directus-shared/types';
 
 const panelsRaw: Ref<PanelConfig[]> = shallowRef([]);
 const panels: Ref<PanelConfig[]> = shallowRef([]);

@@ -1,5 +1,5 @@
-import { Item, Query, SchemaOverview } from '@directus/shared/types';
-import { toArray } from '@directus/shared/utils';
+import { Item, Query, SchemaOverview } from '@skuhnow/directus-shared/types';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import { Knex } from 'knex';
 import { clone, cloneDeep, merge, pick, uniq } from 'lodash';
 import getDatabase from '.';

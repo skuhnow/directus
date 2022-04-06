@@ -1,5 +1,5 @@
 import { shallowRef, Ref } from 'vue';
-import { InterfaceConfig } from '@directus/shared/types';
+import { InterfaceConfig } from '@skuhnow/directus-shared/types';
 
 const interfacesRaw: Ref<InterfaceConfig[]> = shallowRef([]);
 const interfaces: Ref<InterfaceConfig[]> = shallowRef([]);

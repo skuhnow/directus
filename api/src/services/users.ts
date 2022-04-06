@@ -3,20 +3,20 @@ import { Knex } from 'knex';
 import { cloneDeep } from 'lodash';
 import getDatabase from '../database';
 import env from '../env';
-import { FailedValidationException } from '@directus/shared/exceptions';
+import { FailedValidationException } from '@skuhnow/directus-shared/exceptions';
 import { ForbiddenException, InvalidPayloadException, UnprocessableEntityException } from '../exceptions';
 import { RecordNotUniqueException } from '../exceptions/database/record-not-unique';
 import { AbstractServiceOptions, Item, PrimaryKey, MutationOptions } from '../types';
-import { Query, SchemaOverview, Accountability } from '@directus/shared/types';
+import { Query, SchemaOverview, Accountability } from '@skuhnow/directus-shared/types';
 import isUrlAllowed from '../utils/is-url-allowed';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import { Url } from '../utils/url';
 import { ItemsService } from './items';
 import { MailService } from './mail';
 import { SettingsService } from './settings';
 import { stall } from '../utils/stall';
 import { performance } from 'perf_hooks';
-import { getSimpleHash } from '@directus/shared/utils';
+import { getSimpleHash } from '@skuhnow/directus-shared/utils';
 
 export class UsersService extends ItemsService {
 	knex: Knex;

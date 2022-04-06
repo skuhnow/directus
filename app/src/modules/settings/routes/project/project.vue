@@ -44,7 +44,7 @@
 import { useI18n } from 'vue-i18n';
 import { defineComponent, ref, computed } from 'vue';
 import SettingsNavigation from '../../components/navigation.vue';
-import { useCollection } from '@directus/shared/composables';
+import { useCollection } from '@skuhnow/directus-shared/composables';
 import { useSettingsStore, useServerStore } from '@/stores';
 import ProjectInfoSidebarDetail from './components/project-info-sidebar-detail.vue';
 import { clone } from 'lodash';

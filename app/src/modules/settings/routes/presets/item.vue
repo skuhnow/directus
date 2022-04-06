@@ -134,13 +134,13 @@ import { useI18n } from 'vue-i18n';
 import { defineComponent, computed, ref } from 'vue';
 
 import SettingsNavigation from '../../components/navigation.vue';
-import { Preset, Filter } from '@directus/shared/types';
+import { Preset, Filter } from '@skuhnow/directus-shared/types';
 import api from '@/api';
 import { useCollectionsStore, usePresetsStore } from '@/stores';
 import { getLayouts } from '@/layouts';
 import { useRouter } from 'vue-router';
 import { unexpectedError } from '@/utils/unexpected-error';
-import { useLayout } from '@directus/shared/composables';
+import { useLayout } from '@skuhnow/directus-shared/composables';
 import useShortcut from '@/composables/use-shortcut';
 import useEditsGuard from '@/composables/use-edits-guard';
 import { isEqual } from 'lodash';

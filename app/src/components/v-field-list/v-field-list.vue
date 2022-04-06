@@ -23,7 +23,7 @@
 
 <script lang="ts" setup>
 import { useFieldTree } from '@/composables/use-field-tree';
-import { Field } from '@directus/shared/types';
+import { Field } from '@skuhnow/directus-shared/types';
 import { computed, ref, toRefs, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import VFieldListItem from './v-field-list-item.vue';

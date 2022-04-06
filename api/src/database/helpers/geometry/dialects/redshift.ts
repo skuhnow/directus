@@ -1,5 +1,5 @@
 import { GeometryHelper } from '../types';
-import { Field, RawField } from '@directus/shared/types';
+import { Field, RawField } from '@skuhnow/directus-shared/types';
 import { Knex } from 'knex';
 
 export class GeometryHelperRedshift extends GeometryHelper {

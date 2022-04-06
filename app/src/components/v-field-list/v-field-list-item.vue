@@ -34,7 +34,7 @@ export default {
 </script>
 
 <script lang="ts" setup>
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 
 type FieldInfo = {
 	field: string;

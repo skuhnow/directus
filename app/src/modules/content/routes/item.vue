@@ -207,7 +207,7 @@ import { defineComponent, computed, toRefs, ref, ComponentPublicInstance } from 
 
 import ContentNavigation from '../components/navigation.vue';
 import ContentNotFound from './not-found.vue';
-import { useCollection } from '@directus/shared/composables';
+import { useCollection } from '@skuhnow/directus-shared/composables';
 import RevisionsDrawerDetail from '@/views/private/components/revisions-drawer-detail';
 import CommentsSidebarDetail from '@/views/private/components/comments-sidebar-detail';
 import SharesSidebarDetail from '@/views/private/components/shares-sidebar-detail';

@@ -1,4 +1,4 @@
-import { Filter, LogicalFilterAND } from '@directus/shared/types';
+import { Filter, LogicalFilterAND } from '@skuhnow/directus-shared/types';
 import { Knex } from 'knex';
 import { nanoid } from 'nanoid';
 

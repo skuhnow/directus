@@ -2,8 +2,8 @@
 'use strict';
 
 const inquirer = require('inquirer');
-const { EXTENSION_TYPES, EXTENSION_LANGUAGES } = require('@directus/shared/constants');
-const { create } = require('@directus/extensions-sdk/cli');
+const { EXTENSION_TYPES, EXTENSION_LANGUAGES } = require('@skuhnow/directus-shared/constants');
+const { create } = require('@skuhnow/directus-extensions-sdk/cli');
 
 run();
 

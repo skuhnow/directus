@@ -1,7 +1,7 @@
 import { Knex } from 'knex';
 import getDatabase from '../database';
 import { AbstractServiceOptions, File } from '../types';
-import { Accountability, Query, SchemaOverview } from '@directus/shared/types';
+import { Accountability, Query, SchemaOverview } from '@skuhnow/directus-shared/types';
 import {
 	ForbiddenException,
 	InvalidPayloadException,
@@ -21,7 +21,7 @@ import { file as createTmpFile } from 'tmp-promise';
 import env from '../env';
 import { FilesService } from './files';
 import { getDateFormatted } from '../utils/get-date-formatted';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import { NotificationsService } from './notifications';
 import logger from '../logger';
 

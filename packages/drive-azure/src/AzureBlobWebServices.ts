@@ -12,7 +12,7 @@ import {
 	DeleteResponse,
 	isReadableStream,
 	Range,
-} from '@directus/drive';
+} from '@skuhnow/directus-drive';
 
 import {
 	BlobServiceClient,

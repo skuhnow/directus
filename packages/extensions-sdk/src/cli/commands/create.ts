@@ -3,9 +3,9 @@ import chalk from 'chalk';
 import fse from 'fs-extra';
 import execa from 'execa';
 import ora from 'ora';
-import { EXTENSION_TYPES, EXTENSION_PKG_KEY, EXTENSION_LANGUAGES } from '@directus/shared/constants';
-import { isAppExtension, isExtension } from '@directus/shared/utils';
-import { ExtensionType } from '@directus/shared/types';
+import { EXTENSION_TYPES, EXTENSION_PKG_KEY, EXTENSION_LANGUAGES } from '@skuhnow/directus-shared/constants';
+import { isAppExtension, isExtension } from '@skuhnow/directus-shared/utils';
+import { ExtensionType } from '@skuhnow/directus-shared/types';
 import log from '../utils/logger';
 import { isLanguage, languageToShort } from '../utils/languages';
 import renameMap from '../utils/rename-map';
@@ -99,7 +99,7 @@ Build your extension by running:
 async function getPackageDeps(type: ExtensionType, language: Language) {
 	if (isAppExtension(type)) {
 		return {
-			'@directus/extensions-sdk': pkg.version,
+			'@skuhnow/directus-extensions-sdk': pkg.version,
 			...(language === 'typescript'
 				? {
 						typescript: `^${await getPackageVersion('typescript')}`,
@@ -109,7 +109,7 @@ async function getPackageDeps(type: ExtensionType, language: Language) {
 		};
 	} else {
 		return {
-			'@directus/extensions-sdk': pkg.version,
+			'@skuhnow/directus-extensions-sdk': pkg.version,
 			...(language === 'typescript'
 				? {
 						'@types/node': `^${await getPackageVersion('@types/node')}`,

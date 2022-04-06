@@ -1,4 +1,4 @@
-import SchemaInspector from '@directus/schema';
+import SchemaInspector from '@skuhnow/directus-schema';
 import { Knex } from 'knex';
 import { getCache, clearSystemCache } from '../cache';
 import { ALIAS_TYPES } from '../constants';
@@ -10,7 +10,7 @@ import { FieldsService } from '../services/fields';
 import { ItemsService } from '../services/items';
 import Keyv from 'keyv';
 import { AbstractServiceOptions, Collection, CollectionMeta, MutationOptions } from '../types';
-import { Accountability, FieldMeta, RawField, SchemaOverview } from '@directus/shared/types';
+import { Accountability, FieldMeta, RawField, SchemaOverview } from '@skuhnow/directus-shared/types';
 import { Table } from 'knex-schema-inspector/dist/types/table';
 
 export type RawCollection = {

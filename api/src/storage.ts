@@ -1,10 +1,10 @@
-import { LocalFileSystemStorage, Storage, StorageManager, StorageManagerConfig } from '@directus/drive';
-import { AzureBlobWebServicesStorage } from '@directus/drive-azure';
-import { GoogleCloudStorage } from '@directus/drive-gcs';
-import { AmazonWebServicesS3Storage } from '@directus/drive-s3';
+import { LocalFileSystemStorage, Storage, StorageManager, StorageManagerConfig } from '@skuhnow/directus-drive';
+import { AzureBlobWebServicesStorage } from '@skuhnow/directus-drive-azure';
+import { GoogleCloudStorage } from '@skuhnow/directus-drive-gcs';
+import { AmazonWebServicesS3Storage } from '@skuhnow/directus-drive-s3';
 import env from './env';
 import { getConfigFromEnv } from './utils/get-config-from-env';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import { validateEnv } from './utils/validate-env';
 
 validateEnv(['STORAGE_LOCATIONS']);

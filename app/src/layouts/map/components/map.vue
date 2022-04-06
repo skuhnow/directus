@@ -26,7 +26,7 @@ import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import { ref, watch, PropType, onMounted, onUnmounted, defineComponent, toRefs, computed, WatchStopHandle } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-import { ShowSelect } from '@directus/shared/types';
+import { ShowSelect } from '@skuhnow/directus-shared/types';
 import getSetting from '@/utils/get-setting';
 import { useAppStore } from '@/stores';
 import { BoxSelectControl, ButtonControl } from '@/utils/geometry/controls';

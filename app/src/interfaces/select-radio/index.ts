@@ -1,4 +1,4 @@
-import { defineInterface } from '@directus/shared/utils';
+import { defineInterface } from '@skuhnow/directus-shared/utils';
 import InterfaceSelectRadio from './select-radio.vue';
 import PreviewSVG from './preview.svg?raw';
 

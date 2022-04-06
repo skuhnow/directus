@@ -1,4 +1,4 @@
-import { BaseException } from '@directus/shared/exceptions';
+import { BaseException } from '@skuhnow/directus-shared/exceptions';
 
 export class InvalidConfigException extends BaseException {
 	constructor(message = 'Invalid config', extensions?: Record<string, any>) {

@@ -1,4 +1,4 @@
-import { Collection as CollectionRaw, CollectionType } from '@directus/shared/types';
+import { Collection as CollectionRaw, CollectionType } from '@skuhnow/directus-shared/types';
 import { TranslateResult } from 'vue-i18n';
 
 export interface Collection extends CollectionRaw {

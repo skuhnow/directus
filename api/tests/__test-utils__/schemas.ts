@@ -1,4 +1,4 @@
-import { CollectionsOverview, Relation } from '@directus/shared/types';
+import { CollectionsOverview, Relation } from '@skuhnow/directus-shared/types';
 
 export const systemSchema = {
 	collections: {

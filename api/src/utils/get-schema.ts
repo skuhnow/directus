@@ -1,6 +1,6 @@
-import SchemaInspector from '@directus/schema';
-import { Accountability, SchemaOverview, Filter } from '@directus/shared/types';
-import { toArray } from '@directus/shared/utils';
+import SchemaInspector from '@skuhnow/directus-schema';
+import { Accountability, SchemaOverview, Filter } from '@skuhnow/directus-shared/types';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import { Knex } from 'knex';
 import { mapValues } from 'lodash';
 import { getCache, setSystemCache } from '../cache';

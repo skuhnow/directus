@@ -18,8 +18,8 @@
 <script lang="ts">
 import { useI18n } from 'vue-i18n';
 import { defineComponent, PropType } from 'vue';
-import { Field } from '@directus/shared/types';
-import { useSync } from '@directus/shared/composables';
+import { Field } from '@skuhnow/directus-shared/types';
+import { useSync } from '@skuhnow/directus-shared/composables';
 
 export default defineComponent({
 	inheritAttrs: false,

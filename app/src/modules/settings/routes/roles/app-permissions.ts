@@ -1,4 +1,4 @@
-import { Permission } from '@directus/shared/types';
+import { Permission } from '@skuhnow/directus-shared/types';
 
 export const appRecommendedPermissions: Partial<Permission>[] = [
 	{

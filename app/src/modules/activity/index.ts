@@ -1,4 +1,4 @@
-import { defineModule } from '@directus/shared/utils';
+import { defineModule } from '@skuhnow/directus-shared/utils';
 import ActivityCollection from './routes/collection.vue';
 import ActivityItem from './routes/item.vue';
 

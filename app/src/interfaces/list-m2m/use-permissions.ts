@@ -1,5 +1,5 @@
 import { usePermissionsStore, useUserStore } from '@/stores';
-import { Collection } from '@directus/shared/types';
+import { Collection } from '@skuhnow/directus-shared/types';
 import { computed, Ref, ComputedRef } from 'vue';
 
 type UsablePermissions = {

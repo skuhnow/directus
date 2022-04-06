@@ -2,9 +2,9 @@ import { ErrorRequestHandler } from 'express';
 import emitter from '../emitter';
 import env from '../env';
 import { MethodNotAllowedException } from '../exceptions';
-import { BaseException } from '@directus/shared/exceptions';
+import { BaseException } from '@skuhnow/directus-shared/exceptions';
 import logger from '../logger';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import getDatabase from '../database';
 
 // Note: keep all 4 parameters here. That's how Express recognizes it's the error handler, even if

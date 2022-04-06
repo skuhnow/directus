@@ -13,8 +13,8 @@ import logger from '../logger';
 import { rateLimiter } from '../middleware/rate-limiter';
 import storage from '../storage';
 import { AbstractServiceOptions } from '../types';
-import { Accountability, SchemaOverview } from '@directus/shared/types';
-import { toArray } from '@directus/shared/utils';
+import { Accountability, SchemaOverview } from '@skuhnow/directus-shared/types';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import getMailer from '../mailer';
 import { SettingsService } from './settings';
 

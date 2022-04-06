@@ -2,8 +2,8 @@
  * Custom properties on the req object in express
  */
 
-import { Accountability } from '@directus/shared/types';
-import { Query } from '@directus/shared/types';
+import { Accountability } from '@skuhnow/directus-shared/types';
+import { Query } from '@skuhnow/directus-shared/types';
 import { SchemaOverview } from './schema';
 
 export {};

@@ -1,5 +1,5 @@
 import { useRelationsStore } from '@/stores/';
-import { Relation } from '@directus/shared/types';
+import { Relation } from '@skuhnow/directus-shared/types';
 import { getLocalTypeForField } from '../../modules/settings/routes/data-model/get-local-type';
 
 export interface RelatedCollectionData {

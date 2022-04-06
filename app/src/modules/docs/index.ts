@@ -1,5 +1,5 @@
-import { defineModule } from '@directus/shared/utils';
-import docs, { DocsRoutes } from '@directus/docs';
+import { defineModule } from '@skuhnow/directus-shared/utils';
+import docs, { DocsRoutes } from '@skuhnow/directus-docs';
 import { RouteRecordRaw } from 'vue-router';
 import NotFound from './routes/not-found.vue';
 import StaticDocs from './routes/static.vue';

@@ -20,7 +20,7 @@ Articles, conjunctions, and prepositions do not get capital letters unless they 
 ## Installation
 
 ```bash
-$ npm install @directus/format-title
+$ npm install @skuhnow/directus-format-title
 ```
 
 ## Usage

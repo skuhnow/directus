@@ -1,4 +1,4 @@
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 import fse from 'fs-extra';
 import { Knex } from 'knex';
 import path from 'path';

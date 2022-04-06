@@ -1,4 +1,4 @@
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import logger from '../logger';
 import { URL } from 'url';
 

@@ -59,7 +59,7 @@
 <script lang="ts">
 import { defineComponent, PropType, computed } from 'vue';
 import { Collection } from '@/types';
-import { Preset } from '@directus/shared/types';
+import { Preset } from '@skuhnow/directus-shared/types';
 import { useUserStore, useCollectionsStore, usePresetsStore } from '@/stores';
 import NavigationItemContent from './navigation-item-content.vue';
 import NavigationBookmark from './navigation-bookmark.vue';

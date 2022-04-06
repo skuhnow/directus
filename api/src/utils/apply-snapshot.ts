@@ -7,7 +7,7 @@ import { getSchema } from './get-schema';
 import { CollectionsService, FieldsService, RelationsService } from '../services';
 import { set } from 'lodash';
 import { DiffNew } from 'deep-diff';
-import { Field, Relation, SchemaOverview } from '@directus/shared/types';
+import { Field, Relation, SchemaOverview } from '@skuhnow/directus-shared/types';
 import logger from '../logger';
 
 export async function applySnapshot(

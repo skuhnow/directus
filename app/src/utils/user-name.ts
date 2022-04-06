@@ -1,5 +1,5 @@
 import { i18n } from '@/lang';
-import { User } from '@directus/shared/types';
+import { User } from '@skuhnow/directus-shared/types';
 
 export function userName(user: Partial<User>): string {
 	if (!user) {

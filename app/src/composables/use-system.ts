@@ -1,7 +1,7 @@
 import { provide } from 'vue';
 import api from '@/api';
 import * as stores from '@/stores';
-import { API_INJECT, EXTENSIONS_INJECT, STORES_INJECT } from '@directus/shared/constants';
+import { API_INJECT, EXTENSIONS_INJECT, STORES_INJECT } from '@skuhnow/directus-shared/constants';
 import { getInterfaces } from '@/interfaces';
 import { getDisplays } from '@/displays';
 import { getLayouts } from '@/layouts';

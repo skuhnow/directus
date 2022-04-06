@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent, computed } from 'vue';
-import { Field, DeepPartial } from '@directus/shared/types';
+import { Field, DeepPartial } from '@skuhnow/directus-shared/types';
 import { useI18n } from 'vue-i18n';
 import { useFieldDetailStore, syncFieldDetailStoreProperty } from '../store';
 import { storeToRefs } from 'pinia';

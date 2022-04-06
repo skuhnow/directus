@@ -1,4 +1,4 @@
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 import Busboy, { BusboyHeaders } from 'busboy';
 import express from 'express';
 import Joi from 'joi';
@@ -11,7 +11,7 @@ import { validateBatch } from '../middleware/validate-batch';
 import { FilesService, MetaService } from '../services';
 import { File, PrimaryKey } from '../types';
 import asyncHandler from '../utils/async-handler';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 
 const router = express.Router();
 

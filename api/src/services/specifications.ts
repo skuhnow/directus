@@ -1,5 +1,5 @@
-import formatTitle from '@directus/format-title';
-import openapi from '@directus/specs';
+import formatTitle from '@skuhnow/directus-format-title';
+import openapi from '@skuhnow/directus-specs';
 import { Knex } from 'knex';
 import { cloneDeep, mergeWith } from 'lodash';
 import {
@@ -16,7 +16,7 @@ import { version } from '../../package.json';
 import getDatabase from '../database';
 import env from '../env';
 import { AbstractServiceOptions, Collection } from '../types';
-import { Accountability, Field, Type, Permission, SchemaOverview, Relation } from '@directus/shared/types';
+import { Accountability, Field, Type, Permission, SchemaOverview, Relation } from '@skuhnow/directus-shared/types';
 import { getRelationType } from '../utils/get-relation-type';
 import { CollectionsService } from './collections';
 import { FieldsService } from './fields';

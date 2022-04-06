@@ -22,9 +22,9 @@
 </template>
 
 <script lang="ts">
-import { Field } from '@directus/shared/types';
+import { Field } from '@skuhnow/directus-shared/types';
 import { defineComponent, PropType, computed, ref, watch } from 'vue';
-import { ValidationError } from '@directus/shared/types';
+import { ValidationError } from '@skuhnow/directus-shared/types';
 import AccordionSection from './accordion-section.vue';
 import { isEqual } from 'lodash';
 

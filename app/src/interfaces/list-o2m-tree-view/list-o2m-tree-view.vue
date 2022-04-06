@@ -50,19 +50,19 @@
 <script lang="ts">
 import { useI18n } from 'vue-i18n';
 import { defineComponent, ref, computed, PropType, onMounted, watch, inject } from 'vue';
-import { useCollection } from '@directus/shared/composables';
+import { useCollection } from '@skuhnow/directus-shared/composables';
 import { useRelationsStore } from '@/stores';
 import api from '@/api';
-import { getFieldsFromTemplate } from '@directus/shared/utils';
+import { getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import hideDragImage from '@/utils/hide-drag-image';
 import NestedDraggable from './nested-draggable.vue';
-import { Relation } from '@directus/shared/types';
+import { Relation } from '@skuhnow/directus-shared/types';
 import DrawerCollection from '@/views/private/components/drawer-collection';
 import DrawerItem from '@/views/private/components/drawer-item';
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 import { parseFilter } from '@/utils/parse-filter';
 import { render } from 'micromustache';
-import { deepMap } from '@directus/shared/utils';
+import { deepMap } from '@skuhnow/directus-shared/utils';
 
 export default defineComponent({
 	components: { NestedDraggable, DrawerCollection, DrawerItem },

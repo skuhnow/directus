@@ -147,14 +147,14 @@ import { defineComponent, computed, ref } from 'vue';
 import SettingsNavigation from '../../../components/navigation.vue';
 import PresetsInfoSidebarDetail from './components/presets-info-sidebar-detail.vue';
 
-import { useCollection, useLayout } from '@directus/shared/composables';
+import { useCollection, useLayout } from '@skuhnow/directus-shared/composables';
 import LayoutSidebarDetail from '@/views/private/components/layout-sidebar-detail';
 import RefreshSidebarDetail from '@/views/private/components/refresh-sidebar-detail';
 import SearchInput from '@/views/private/components/search-input';
 import { usePermissionsStore, useUserStore, usePresetsStore } from '@/stores';
 import DrawerBatch from '@/views/private/components/drawer-batch';
 import { getLayouts } from '@/layouts';
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 
 export default defineComponent({
 	name: 'ContentCollection',

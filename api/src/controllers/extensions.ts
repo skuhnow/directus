@@ -3,8 +3,8 @@ import asyncHandler from '../utils/async-handler';
 import { RouteNotFoundException } from '../exceptions';
 import { getExtensionManager } from '../extensions';
 import { respond } from '../middleware/respond';
-import { depluralize, isAppExtension } from '@directus/shared/utils';
-import { Plural } from '@directus/shared/types';
+import { depluralize, isAppExtension } from '@skuhnow/directus-shared/utils';
+import { Plural } from '@skuhnow/directus-shared/types';
 
 const router = Router();
 

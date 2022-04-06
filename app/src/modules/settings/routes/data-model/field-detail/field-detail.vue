@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType, ref, computed, toRefs, watch } from 'vue';
-import { LocalType } from '@directus/shared/types';
+import { LocalType } from '@skuhnow/directus-shared/types';
 import { useFieldDetailStore } from './store/';
 import FieldDetailSimple from './field-detail-simple/field-detail-simple.vue';
 import FieldDetailAdvanced from './field-detail-advanced/field-detail-advanced.vue';
@@ -30,7 +30,7 @@ import FieldDetailAdvancedActions from './field-detail-advanced/field-detail-adv
 import { useRouter } from 'vue-router';
 import { useCollectionsStore, useFieldsStore } from '@/stores';
 import { useI18n } from 'vue-i18n';
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 import { useDialogRoute } from '@/composables/use-dialog-route';
 import { storeToRefs } from 'pinia';
 

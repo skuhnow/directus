@@ -21,7 +21,7 @@
 <script lang="ts">
 import { useI18n } from 'vue-i18n';
 import { computed, defineComponent, PropType } from 'vue';
-import { Role } from '@directus/shared/types';
+import { Role } from '@skuhnow/directus-shared/types';
 import { useUserStore } from '@/stores';
 
 export default defineComponent({

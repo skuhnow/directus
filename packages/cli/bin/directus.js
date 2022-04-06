@@ -11,7 +11,7 @@ const startupOptions = {
 	useCompiled: !!process.env.DIRECTUS_CLI_DEV && !!process.env.DIRECTUS_CLI_DEV_USE_COMPILED,
 };
 
-const entrypoint = path.resolve('./node_modules/@directus/cli/bin/directus.js');
+const entrypoint = path.resolve('./node_modules/@skuhnow/directus-cli/bin/directus.js');
 if (__filename !== entrypoint && fs.existsSync(entrypoint) && !startupOptions.useGlobal) {
 	require(entrypoint);
 	return;

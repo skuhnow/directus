@@ -1,4 +1,4 @@
-import { defineInterface } from '@directus/shared/utils';
+import { defineInterface } from '@skuhnow/directus-shared/utils';
 import InterfaceSelectDropdownM2O from './select-dropdown-m2o.vue';
 import PreviewSVG from './preview.svg?raw';
 

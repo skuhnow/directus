@@ -38,8 +38,8 @@
 <script lang="ts">
 import { defineComponent, PropType, computed } from 'vue';
 import { merge } from 'lodash';
-import { Field } from '@directus/shared/types';
-import { ValidationError } from '@directus/shared/types';
+import { Field } from '@skuhnow/directus-shared/types';
+import { ValidationError } from '@skuhnow/directus-shared/types';
 import { useI18n } from 'vue-i18n';
 
 export default defineComponent({

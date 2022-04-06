@@ -8,7 +8,7 @@ import emitter from '../emitter';
 import env from '../env';
 import { ForbiddenException } from '../exceptions';
 import { translateDatabaseError } from '../exceptions/database/translate';
-import { Accountability, Query, PermissionsAction, SchemaOverview } from '@directus/shared/types';
+import { Accountability, Query, PermissionsAction, SchemaOverview } from '@skuhnow/directus-shared/types';
 import {
 	AbstractService,
 	AbstractServiceOptions,

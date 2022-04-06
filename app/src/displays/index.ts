@@ -1,5 +1,5 @@
 import { shallowRef, Ref } from 'vue';
-import { DisplayConfig } from '@directus/shared/types';
+import { DisplayConfig } from '@skuhnow/directus-shared/types';
 
 const displaysRaw: Ref<DisplayConfig[]> = shallowRef([]);
 const displays: Ref<DisplayConfig[]> = shallowRef([]);

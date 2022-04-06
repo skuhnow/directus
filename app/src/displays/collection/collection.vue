@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { defineComponent, toRefs } from 'vue';
-import { useCollection } from '@directus/shared/composables';
+import { useCollection } from '@skuhnow/directus-shared/composables';
 
 export default defineComponent({
 	props: {

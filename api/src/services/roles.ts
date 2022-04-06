@@ -1,6 +1,6 @@
 import { ForbiddenException, UnprocessableEntityException } from '../exceptions';
 import { AbstractServiceOptions, MutationOptions, PrimaryKey, Alterations, Item } from '../types';
-import { Query } from '@directus/shared/types';
+import { Query } from '@skuhnow/directus-shared/types';
 import { ItemsService } from './items';
 import { PermissionsService } from './permissions';
 import { PresetsService } from './presets';

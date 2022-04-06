@@ -1,4 +1,4 @@
-import { defineDisplay, getFieldsFromTemplate } from '@directus/shared/utils';
+import { defineDisplay, getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import DisplayTranslations from './translations.vue';
 import { useFieldsStore } from '@/stores';
 import { useRelationsStore } from '@/stores';

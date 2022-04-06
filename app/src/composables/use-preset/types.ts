@@ -1,4 +1,4 @@
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 
 export type Preset = {
 	id: number;

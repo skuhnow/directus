@@ -1,7 +1,7 @@
 import { getRootPath } from '@/utils/get-root-path';
 import { App } from 'vue';
 import { getLayouts } from './index';
-import { LayoutConfig } from '@directus/shared/types';
+import { LayoutConfig } from '@skuhnow/directus-shared/types';
 
 const { layoutsRaw } = getLayouts();
 

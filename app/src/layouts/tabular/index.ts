@@ -1,4 +1,4 @@
-import { defineLayout } from '@directus/shared/utils';
+import { defineLayout } from '@skuhnow/directus-shared/utils';
 import TabularLayout from './tabular.vue';
 import TabularOptions from './options.vue';
 import TabularActions from './actions.vue';
@@ -7,15 +7,15 @@ import { useI18n } from 'vue-i18n';
 import { ref, computed, watch, toRefs } from 'vue';
 
 import { HeaderRaw, Item } from '@/components/v-table/types';
-import { Field } from '@directus/shared/types';
+import { Field } from '@skuhnow/directus-shared/types';
 import { useRouter } from 'vue-router';
 import { debounce, clone } from 'lodash';
-import { useCollection } from '@directus/shared/composables';
-import { useItems } from '@directus/shared/composables';
+import { useCollection } from '@skuhnow/directus-shared/composables';
+import { useItems } from '@skuhnow/directus-shared/composables';
 import adjustFieldsForDisplays from '@/utils/adjust-fields-for-displays';
 import hideDragImage from '@/utils/hide-drag-image';
 import { getDefaultDisplayForType } from '@/utils/get-default-display-for-type';
-import { useSync } from '@directus/shared/composables';
+import { useSync } from '@skuhnow/directus-shared/composables';
 import { LayoutOptions, LayoutQuery } from './types';
 import { syncRefProperty } from '@/utils/sync-ref-property';
 import { useFieldsStore } from '@/stores';

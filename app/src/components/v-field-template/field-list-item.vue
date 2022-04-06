@@ -22,7 +22,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from 'vue';
 import { FieldTree } from './types';
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 
 export default defineComponent({
 	name: 'FieldListItem',

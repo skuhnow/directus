@@ -1,7 +1,7 @@
 import api from '@/api';
 import { useFieldsStore } from '@/stores/';
 import { unexpectedError } from '@/utils/unexpected-error';
-import { Relation, DeepPartial } from '@directus/shared/types';
+import { Relation, DeepPartial } from '@skuhnow/directus-shared/types';
 import { isEqual } from 'lodash';
 import { defineStore } from 'pinia';
 

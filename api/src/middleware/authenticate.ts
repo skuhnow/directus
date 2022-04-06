@@ -1,4 +1,4 @@
-import { Accountability } from '@directus/shared/types';
+import { Accountability } from '@skuhnow/directus-shared/types';
 import { NextFunction, Request, Response } from 'express';
 import { isEqual } from 'lodash';
 import getDatabase from '../database';

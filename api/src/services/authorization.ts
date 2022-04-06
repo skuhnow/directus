@@ -1,4 +1,4 @@
-import { FailedValidationException } from '@directus/shared/exceptions';
+import { FailedValidationException } from '@skuhnow/directus-shared/exceptions';
 import {
 	Accountability,
 	Aggregate,
@@ -7,8 +7,8 @@ import {
 	PermissionsAction,
 	Query,
 	SchemaOverview,
-} from '@directus/shared/types';
-import { validatePayload } from '@directus/shared/utils';
+} from '@skuhnow/directus-shared/types';
+import { validatePayload } from '@skuhnow/directus-shared/utils';
 import { Knex } from 'knex';
 import { cloneDeep, flatten, isArray, isNil, merge, uniq, uniqWith } from 'lodash';
 import getDatabase from '../database';

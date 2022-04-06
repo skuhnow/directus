@@ -1,4 +1,4 @@
-import { StorageManager } from '@directus/drive';
+import { StorageManager } from '@skuhnow/directus-drive';
 import { AzureBlobWebServicesStorage } from '../src';
 
 describe('drive', function () {

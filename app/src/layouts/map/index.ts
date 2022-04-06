@@ -1,4 +1,4 @@
-import { defineLayout } from '@directus/shared/utils';
+import { defineLayout } from '@skuhnow/directus-shared/utils';
 import MapLayout from './map.vue';
 import MapOptions from './options.vue';
 import MapActions from './actions.vue';
@@ -9,13 +9,13 @@ import { toRefs, computed, ref, watch } from 'vue';
 import { toGeoJSON, getGeometryFormatForType } from '@/utils/geometry';
 import { getMapStyle } from './style';
 import { useRouter } from 'vue-router';
-import { useSync } from '@directus/shared/composables';
+import { useSync } from '@skuhnow/directus-shared/composables';
 import { LayoutOptions, LayoutQuery } from './types';
-import { Filter, Item } from '@directus/shared/types';
-import { useCollection } from '@directus/shared/composables';
-import { useItems } from '@directus/shared/composables';
-import { getFieldsFromTemplate } from '@directus/shared/utils';
-import { Field, GeometryOptions } from '@directus/shared/types';
+import { Filter, Item } from '@skuhnow/directus-shared/types';
+import { useCollection } from '@skuhnow/directus-shared/composables';
+import { useItems } from '@skuhnow/directus-shared/composables';
+import { getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
+import { Field, GeometryOptions } from '@skuhnow/directus-shared/types';
 import { syncRefProperty } from '@/utils/sync-ref-property';
 
 import { cloneDeep, merge } from 'lodash';

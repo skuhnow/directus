@@ -102,12 +102,18 @@ import InputGroup from './input-group.vue';
 import Draggable from 'vuedraggable';
 import { useFieldsStore } from '@/stores';
 import { useI18n } from 'vue-i18n';
-import { getFilterOperatorsForType } from '@directus/shared/utils';
+import { getFilterOperatorsForType } from '@skuhnow/directus-shared/utils';
 import { get } from 'lodash';
-import { FieldFilter, Filter, FieldFilterOperator, LogicalFilterAND, LogicalFilterOR } from '@directus/shared/types';
-import { useSync } from '@directus/shared/composables';
+import {
+	FieldFilter,
+	Filter,
+	FieldFilterOperator,
+	LogicalFilterAND,
+	LogicalFilterOR,
+} from '@skuhnow/directus-shared/types';
+import { useSync } from '@skuhnow/directus-shared/composables';
 import { fieldToFilter, getField, getNodeName, getComparator } from './utils';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 
 type FilterInfo =
 	| {

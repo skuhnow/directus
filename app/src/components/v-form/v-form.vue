@@ -64,7 +64,7 @@
 import { useI18n } from 'vue-i18n';
 import { defineComponent, PropType, computed, ref, provide, watch, onBeforeUpdate } from 'vue';
 import { useFieldsStore } from '@/stores/';
-import { Field, ValidationError } from '@directus/shared/types';
+import { Field, ValidationError } from '@skuhnow/directus-shared/types';
 import { assign, cloneDeep, isEqual, isNil, omit, pick } from 'lodash';
 import useFormFields from '@/composables/use-form-fields';
 import { useElementSize } from '@/composables/use-element-size';

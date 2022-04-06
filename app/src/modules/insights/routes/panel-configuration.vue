@@ -84,7 +84,7 @@ import ExtensionOptions from '../../settings/routes/data-model/field-detail/shar
 import { computed, defineComponent, reactive, watch, PropType } from 'vue';
 import { getPanels, getPanel } from '@/panels';
 import { FancySelectItem } from '@/components/v-fancy-select/types';
-import { Panel } from '@directus/shared/types';
+import { Panel } from '@skuhnow/directus-shared/types';
 import { useI18n } from 'vue-i18n';
 import { useDialogRoute } from '@/composables/use-dialog-route';
 

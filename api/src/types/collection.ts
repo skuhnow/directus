@@ -1,5 +1,5 @@
 import { Table } from 'knex-schema-inspector/dist/types/table';
-import { Field } from '@directus/shared/types';
+import { Field } from '@skuhnow/directus-shared/types';
 
 export type CollectionMeta = {
 	collection: string;

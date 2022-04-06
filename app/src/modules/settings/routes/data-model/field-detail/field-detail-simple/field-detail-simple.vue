@@ -41,7 +41,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType, computed, toRefs, watch } from 'vue';
-import { Collection } from '@directus/shared/types';
+import { Collection } from '@skuhnow/directus-shared/types';
 import { useI18n } from 'vue-i18n';
 import { getInterfaces } from '@/interfaces';
 import { orderBy } from 'lodash';

@@ -1,5 +1,5 @@
 import { usePresetsStore, useUserStore } from '@/stores';
-import { Filter, Preset } from '@directus/shared/types';
+import { Filter, Preset } from '@skuhnow/directus-shared/types';
 import { assign, debounce, isEqual } from 'lodash';
 import { computed, ComputedRef, ref, Ref, watch } from 'vue';
 

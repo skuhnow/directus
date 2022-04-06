@@ -31,11 +31,11 @@
 <script lang="ts">
 import { defineComponent, ref, watchEffect, computed, PropType } from 'vue';
 import api from '@/api';
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 import { useFieldsStore } from '@/stores';
 import DrawerItem from '@/views/private/components/drawer-item';
 import { unexpectedError } from '@/utils/unexpected-error';
-import { getFieldsFromTemplate } from '@directus/shared/utils';
+import { getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import { adjustFieldsForDisplays } from '@/utils/adjust-fields-for-displays';
 import { getEndpoint } from '@/utils/get-endpoint';
 import { useI18n } from 'vue-i18n';

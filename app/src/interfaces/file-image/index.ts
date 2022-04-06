@@ -1,4 +1,4 @@
-import { defineInterface } from '@directus/shared/utils';
+import { defineInterface } from '@skuhnow/directus-shared/utils';
 import InterfaceFileImage from './file-image.vue';
 import PreviewSVG from './preview.svg?raw';
 

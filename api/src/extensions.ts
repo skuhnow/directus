@@ -10,14 +10,14 @@ import {
 	HookConfig,
 	InitHandler,
 	ScheduleHandler,
-} from '@directus/shared/types';
+} from '@skuhnow/directus-shared/types';
 import {
 	ensureExtensionDirs,
 	generateExtensionsEntry,
 	getLocalExtensions,
 	getPackageExtensions,
 	resolvePackage,
-} from '@directus/shared/utils/node';
+} from '@skuhnow/directus-shared/utils/node';
 import {
 	API_EXTENSION_PACKAGE_TYPES,
 	API_EXTENSION_TYPES,
@@ -25,12 +25,12 @@ import {
 	APP_SHARED_DEPS,
 	EXTENSION_PACKAGE_TYPES,
 	EXTENSION_TYPES,
-} from '@directus/shared/constants';
+} from '@skuhnow/directus-shared/constants';
 import getDatabase from './database';
 import emitter, { Emitter } from './emitter';
 import env from './env';
 import * as exceptions from './exceptions';
-import * as sharedExceptions from '@directus/shared/exceptions';
+import * as sharedExceptions from '@skuhnow/directus-shared/exceptions';
 import logger from './logger';
 import fse from 'fs-extra';
 import { getSchema } from './utils/get-schema';
@@ -44,7 +44,7 @@ import { Url } from './utils/url';
 import getModuleDefault from './utils/get-module-default';
 import { clone, escapeRegExp } from 'lodash';
 import chokidar, { FSWatcher } from 'chokidar';
-import { pluralize } from '@directus/shared/utils';
+import { pluralize } from '@skuhnow/directus-shared/utils';
 
 let extensionManager: ExtensionManager | undefined;
 
@@ -291,7 +291,7 @@ class ExtensionManager {
 	}
 
 	private async getSharedDepsMapping(deps: string[]) {
-		const appDir = await fse.readdir(path.join(resolvePackage('@directus/app'), 'dist', 'assets'));
+		const appDir = await fse.readdir(path.join(resolvePackage('@skuhnow/directus-app'), 'dist', 'assets'));
 
 		const depsMapping: Record<string, string> = {};
 		for (const dep of deps) {

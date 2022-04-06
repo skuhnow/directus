@@ -1,4 +1,4 @@
-import { BaseException } from '@directus/shared/exceptions';
+import { BaseException } from '@skuhnow/directus-shared/exceptions';
 
 export class InvalidTokenException extends BaseException {
 	constructor(message = 'Invalid token') {

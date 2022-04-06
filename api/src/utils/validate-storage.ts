@@ -3,7 +3,7 @@ import logger from '../logger';
 import { access } from 'fs-extra';
 import { constants } from 'fs';
 import path from 'path';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 
 export async function validateStorage(): Promise<void> {
 	if (env.DB_CLIENT === 'sqlite3') {

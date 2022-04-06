@@ -15,7 +15,7 @@
 import { useI18n } from 'vue-i18n';
 import { defineComponent, computed, inject, ref, watch } from 'vue';
 import { getInterfaces } from '@/interfaces';
-import { InterfaceConfig } from '@directus/shared/types';
+import { InterfaceConfig } from '@skuhnow/directus-shared/types';
 
 export default defineComponent({
 	props: {

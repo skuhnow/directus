@@ -85,10 +85,10 @@ import DrawerItem from '@/views/private/components/drawer-item';
 import DrawerCollection from '@/views/private/components/drawer-collection';
 import { get } from 'lodash';
 import Draggable from 'vuedraggable';
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 import { parseFilter } from '@/utils/parse-filter';
 import { render } from 'micromustache';
-import { deepMap } from '@directus/shared/utils';
+import { deepMap } from '@skuhnow/directus-shared/utils';
 
 import useActions from './use-actions';
 import useRelation from '@/composables/use-m2m';
@@ -97,7 +97,7 @@ import useEdit from './use-edit';
 import usePermissions from './use-permissions';
 import useSelection from './use-selection';
 import useSort from './use-sort';
-import { getFieldsFromTemplate } from '@directus/shared/utils';
+import { getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import adjustFieldsForDisplays from '@/utils/adjust-fields-for-displays';
 
 export default defineComponent({

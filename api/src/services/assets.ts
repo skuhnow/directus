@@ -1,4 +1,4 @@
-import { Range, StatResponse } from '@directus/drive';
+import { Range, StatResponse } from '@skuhnow/directus-drive';
 import { Semaphore } from 'async-mutex';
 import { Knex } from 'knex';
 import { contentType } from 'mime-types';
@@ -10,7 +10,7 @@ import env from '../env';
 import { IllegalAssetTransformation, RangeNotSatisfiableException, ForbiddenException } from '../exceptions';
 import storage from '../storage';
 import { AbstractServiceOptions, File, Transformation, TransformationParams, TransformationPreset } from '../types';
-import { Accountability } from '@directus/shared/types';
+import { Accountability } from '@skuhnow/directus-shared/types';
 import { AuthorizationService } from './authorization';
 import * as TransformationUtils from '../utils/transformations';
 import validateUUID from 'uuid-validate';

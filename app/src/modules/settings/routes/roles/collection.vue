@@ -67,7 +67,7 @@ import ValueNull from '@/views/private/components/value-null';
 import { useRouter } from 'vue-router';
 import { unexpectedError } from '@/utils/unexpected-error';
 import { translate } from '@/utils/translate-object-values';
-import { Role } from '@directus/shared/types';
+import { Role } from '@skuhnow/directus-shared/types';
 
 type RoleItem = Partial<Role> & {
 	count?: number;

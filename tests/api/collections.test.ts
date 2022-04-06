@@ -2,7 +2,7 @@ import request from 'supertest';
 import vendors from '../get-dbs-to-test';
 import config, { getUrl } from '../config';
 import knex, { Knex } from 'knex';
-import { Collection } from '@directus/shared/types';
+import { Collection } from '@skuhnow/directus-shared/types';
 
 const TABLES_AFTER_SEED = [
 	'artists',

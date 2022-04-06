@@ -1,5 +1,5 @@
 import api from '@/api';
-import { defineModule } from '@directus/shared/utils';
+import { defineModule } from '@skuhnow/directus-shared/utils';
 import { useCollectionsStore, useFieldsStore } from '@/stores';
 import RouterPass from '@/utils/router-passthrough';
 import Collections from './routes/data-model/collections/collections.vue';

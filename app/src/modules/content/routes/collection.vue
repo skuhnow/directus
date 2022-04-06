@@ -274,7 +274,7 @@ import { defineComponent, computed, ref, watch, toRefs } from 'vue';
 import ContentNavigation from '../components/navigation.vue';
 import api from '@/api';
 import ContentNotFound from './not-found.vue';
-import { useCollection, useLayout } from '@directus/shared/composables';
+import { useCollection, useLayout } from '@skuhnow/directus-shared/composables';
 import usePreset from '@/composables/use-preset';
 import LayoutSidebarDetail from '@/views/private/components/layout-sidebar-detail';
 import ArchiveSidebarDetail from '@/views/private/components/archive-sidebar-detail';
@@ -287,8 +287,8 @@ import { usePermissionsStore, useUserStore } from '@/stores';
 import DrawerBatch from '@/views/private/components/drawer-batch';
 import { unexpectedError } from '@/utils/unexpected-error';
 import { getLayouts } from '@/layouts';
-import { mergeFilters } from '@directus/shared/utils';
-import { Filter } from '@directus/shared/types';
+import { mergeFilters } from '@skuhnow/directus-shared/utils';
+import { Filter } from '@skuhnow/directus-shared/types';
 
 type Item = {
 	[field: string]: any;

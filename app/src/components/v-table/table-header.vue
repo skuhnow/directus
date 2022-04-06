@@ -100,13 +100,13 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 import { computed, ref, useSlots } from 'vue';
-import { ShowSelect } from '@directus/shared/types';
+import { ShowSelect } from '@skuhnow/directus-shared/types';
 import useEventListener from '@/composables/use-event-listener';
 import { Header, Sort } from './types';
 import { throttle, clone } from 'lodash';
 import Draggable from 'vuedraggable';
 import hideDragImage from '@/utils/hide-drag-image';
-import { useSync } from '@directus/shared/composables';
+import { useSync } from '@skuhnow/directus-shared/composables';
 
 interface Props {
 	headers: Header[];

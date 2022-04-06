@@ -77,21 +77,21 @@
 import { useI18n } from 'vue-i18n';
 import { defineComponent, ref, computed, watch, PropType, inject } from 'vue';
 import api from '@/api';
-import { useCollection } from '@directus/shared/composables';
+import { useCollection } from '@skuhnow/directus-shared/composables';
 import { useCollectionsStore, useRelationsStore, useFieldsStore, usePermissionsStore, useUserStore } from '@/stores/';
 import DrawerItem from '@/views/private/components/drawer-item';
 import DrawerCollection from '@/views/private/components/drawer-collection';
-import { Field, Relation } from '@directus/shared/types';
+import { Field, Relation } from '@skuhnow/directus-shared/types';
 import { get, isEqual, sortBy } from 'lodash';
 import { unexpectedError } from '@/utils/unexpected-error';
-import { getFieldsFromTemplate } from '@directus/shared/utils';
+import { getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import { addRelatedPrimaryKeyToFields } from '@/utils/add-related-primary-key-to-fields';
 import Draggable from 'vuedraggable';
 import adjustFieldsForDisplays from '@/utils/adjust-fields-for-displays';
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 import { parseFilter } from '@/utils/parse-filter';
 import { render } from 'micromustache';
-import { deepMap } from '@directus/shared/utils';
+import { deepMap } from '@skuhnow/directus-shared/utils';
 
 export default defineComponent({
 	components: { DrawerItem, DrawerCollection, Draggable },

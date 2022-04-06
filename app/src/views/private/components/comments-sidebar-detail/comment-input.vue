@@ -66,7 +66,7 @@ import { userName } from '@/utils/user-name';
 import { unexpectedError } from '@/utils/unexpected-error';
 import { throttle } from 'lodash';
 import axios, { CancelTokenSource } from 'axios';
-import { User } from '@directus/shared/types';
+import { User } from '@skuhnow/directus-shared/types';
 import { getRootPath } from '@/utils/get-root-path';
 import vTemplateInput from '@/components/v-template-input.vue';
 import { cloneDeep } from 'lodash';

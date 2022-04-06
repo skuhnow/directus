@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import { defineComponent, computed, PropType } from 'vue';
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 import { translate } from '@/utils/translate-object-values';
 import { isEmpty } from 'lodash';
 
