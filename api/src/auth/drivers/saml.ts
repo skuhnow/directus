@@ -79,10 +79,10 @@ export class SamlAuthDriver extends LocalAuthDriver {
 
 	private async resolveRole(payloadRoles: string[]): Promise<string> {
 		let roleId;
-		if (payloadRoles.includes('ROLE_FRONTEND_ADMINISTRATOR') || payloadRoles.includes('ROLE_ADMIN')) {
-			roleId = await this.fetchRoleId('ROLE_FRONTEND_ADMINISTRATOR');
-		} else if (payloadRoles.includes('ROLE_FRONTEND_CMS')) {
-			roleId = await this.fetchRoleId('ROLE_FRONTEND_CMS');
+		if (payloadRoles.includes('ROLE_ADMIN')) {
+			roleId = await this.fetchRoleId('ROLE_ADMIN');
+		} else {
+			roleId = await this.fetchRoleId('ROLE_USER');
 		}
 
 		if (roleId) {
