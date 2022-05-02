@@ -1,4 +1,4 @@
-import express, { Router } from 'express';
+import { Router } from 'express';
 import { LocalAuthDriver } from './local';
 import { respond } from '../../middleware/respond';
 import { AuthDriverOptions, User } from '../../types';
@@ -23,7 +23,7 @@ export class SamlAuthDriver extends LocalAuthDriver {
 
 		this.usersService = new UsersService({ knex: this.knex, schema: this.schema });
 		this.saml = new SAML({
-			callbackUrl: config.callbackUrl,
+			callbackUrl: config.appEntryUrl,
 			entryPoint: config.entryPoint,
 			logoutUrl: config.logoutUrl,
 			cert: config.cert,
@@ -42,17 +42,23 @@ export class SamlAuthDriver extends LocalAuthDriver {
 		if (userId) {
 			return userId;
 		}
+		if (payload.companyGroup !== 'servicepartner') {
+			logger.error(`Only companyGroup 'servicepartner' is allowed to access the cms.`);
+			throw new InvalidCredentialsException();
+		}
+		if (!process.env.SERVICEPARTNER || process.env.SERVICEPARTNER !== payload.companyCode) {
+			logger.error(`[SAML] Preset ${process.env.SERVICEPARTNER} does not match companyCode ${payload.companyCode}`);
+			throw new InvalidCredentialsException();
+		}
 
-		const userPayload = {
+		await this.usersService.createOne({
 			provider: 'saml',
 			first_name: payload.givenName,
 			last_name: payload.sn,
 			email: payload.email,
 			external_identifier: identifier,
 			role: await this.resolveRole(payload.roles),
-		};
-
-		await this.usersService.createOne(userPayload);
+		});
 
 		return (await this.fetchUserId(identifier)) as string;
 	}
