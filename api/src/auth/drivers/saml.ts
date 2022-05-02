@@ -46,9 +46,12 @@ export class SamlAuthDriver extends LocalAuthDriver {
 			logger.error(`Only companyGroup 'servicepartner' is allowed to access the cms.`);
 			throw new InvalidCredentialsException();
 		}
-		if (!process.env.SERVICEPARTNER || process.env.SERVICEPARTNER !== payload.companyCode) {
-			logger.error(`[SAML] Preset ${process.env.SERVICEPARTNER} does not match companyCode ${payload.companyCode}`);
-			throw new InvalidCredentialsException();
+		const isAdmin = payload.roles.includes('ROLE_ADMIN');
+		if (!isAdmin) {
+			if (!process.env.SERVICEPARTNER || process.env.SERVICEPARTNER !== payload.companyCode) {
+				logger.error(`[SAML] Preset ${process.env.SERVICEPARTNER} does not match companyCode ${payload.companyCode}`);
+				throw new InvalidCredentialsException();
+			}
 		}
 
 		await this.usersService.createOne({
