@@ -1,9 +1,10 @@
 import SchemaInspector from '@skuhnow/directus-schema';
-import { Accountability, SchemaOverview, Filter } from '@skuhnow/directus-shared/types';
+import { Accountability, Filter, SchemaOverview } from '@skuhnow/directus-shared/types';
 import { toArray } from '@skuhnow/directus-shared/utils';
 import { Knex } from 'knex';
 import { mapValues } from 'lodash';
 import { getCache, setSystemCache } from '../cache';
+import { ALIAS_TYPES } from '../constants';
 import getDatabase from '../database';
 import { systemCollectionRows } from '../database/system-data/collections';
 import { systemFieldRows } from '../database/system-data/fields';
@@ -135,6 +136,9 @@ async function getDatabaseSchema(
 		const existing = result.collections[field.collection].fields[field.field];
 		const column = schemaOverview[field.collection].columns[field.field];
 		const special = field.special ? toArray(field.special) : [];
+
+		if (ALIAS_TYPES.some((type) => special.includes(type)) === false && !existing) continue;
+
 		const type = (existing && getLocalType(column, { special })) || 'alias';
 		let validation = field.validation ?? null;
 
@@ -152,7 +156,7 @@ async function getDatabaseSchema(
 			special: special,
 			note: field.note,
 			alias: existing?.alias ?? true,
-			validation: (field.validation as Filter) ?? null,
+			validation: (validation as Filter) ?? null,
 		};
 	}
 
