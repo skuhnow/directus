@@ -1,6 +1,6 @@
 import { useCollectionsStore, useFieldsStore, useRelationsStore } from '@/stores';
 import { Collection } from '@/types';
-import { Field, Relation } from '@directus/shared/types';
+import { Field, Relation } from '@skuhnow/directus-shared/types';
 import { computed, Ref } from 'vue';
 
 export type RelationM2A = {

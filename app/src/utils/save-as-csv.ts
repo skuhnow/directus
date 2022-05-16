@@ -1,4 +1,4 @@
-import { Item, Field, DisplayConfig } from '@directus/shared/types';
+import { Item, Field, DisplayConfig } from '@skuhnow/directus-shared/types';
 import { saveAs } from 'file-saver';
 import { parse } from 'json2csv';
 import { getDisplay } from '@/displays';

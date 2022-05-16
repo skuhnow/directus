@@ -15,8 +15,8 @@ import api from '@/api';
 import { Filter } from '@skuhnow/directus-shared/types';
 import { useI18n } from 'vue-i18n';
 import { isNil } from 'lodash';
-import { getEndpoint, abbreviateNumber } from '@directus/shared/utils';
-import { cssVar } from '@directus/shared/utils/browser';
+import { getEndpoint, abbreviateNumber } from '@skuhnow/directus-shared/utils';
+import { cssVar } from '@skuhnow/directus-shared/utils/browser';
 
 export default defineComponent({
 	props: {

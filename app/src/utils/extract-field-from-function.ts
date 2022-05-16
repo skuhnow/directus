@@ -1,5 +1,5 @@
-import { REGEX_BETWEEN_PARENS } from '@directus/shared/constants';
-import { FieldFunction } from '@directus/shared/types';
+import { REGEX_BETWEEN_PARENS } from '@skuhnow/directus-shared/constants';
+import { FieldFunction } from '@skuhnow/directus-shared/types';
 
 export function extractFieldFromFunction(fieldKey: string): { fn: FieldFunction | null; field: string } {
 	let functionName;

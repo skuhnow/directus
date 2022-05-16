@@ -12,7 +12,7 @@ import Keyv from 'keyv';
 import { AbstractServiceOptions, Collection, CollectionMeta, MutationOptions } from '../types';
 import { Accountability, FieldMeta, RawField, SchemaOverview } from '@skuhnow/directus-shared/types';
 import { Table } from 'knex-schema-inspector/dist/types/table';
-import { addFieldFlag } from '@directus/shared/utils';
+import { addFieldFlag } from '@skuhnow/directus-shared/utils';
 import { getHelpers, Helpers } from '../database/helpers';
 
 export type RawCollection = {

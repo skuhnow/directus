@@ -1,6 +1,6 @@
 import { TransportRequestOptions } from './transport';
 import { ID } from './types';
-import { Aggregate as SharedAggregate } from '@directus/shared/types';
+import { Aggregate as SharedAggregate } from '@skuhnow/directus-shared/types';
 
 export type Field = string;
 

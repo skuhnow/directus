@@ -1,4 +1,4 @@
-import { Relation } from '@directus/shared/types';
+import { Relation } from '@skuhnow/directus-shared/types';
 import { getRelationInfo } from './get-relation-info';
 import { InvalidQueryException } from '../exceptions';
 import { get } from 'lodash';

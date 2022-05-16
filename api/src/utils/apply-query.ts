@@ -1,5 +1,5 @@
 import { Aggregate, FieldFunction, Filter, Query, Relation, SchemaOverview } from '@skuhnow/directus-shared/types';
-import { getOutputTypeForFunction } from '@directus/shared/utils';
+import { getOutputTypeForFunction } from '@skuhnow/directus-shared/utils';
 import { Knex } from 'knex';
 import { clone, isPlainObject, set } from 'lodash';
 import { customAlphabet } from 'nanoid';

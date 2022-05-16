@@ -228,7 +228,7 @@ import { useI18n } from 'vue-i18n';
 import { useCollection } from '@skuhnow/directus-shared/composables';
 import { unexpectedError } from '@/utils/unexpected-error';
 import { debounce } from 'lodash';
-import { getEndpoint } from '@directus/shared/utils';
+import { getEndpoint } from '@skuhnow/directus-shared/utils';
 import FolderPicker from '@/views/private/components/folder-picker/folder-picker.vue';
 
 type LayoutQuery = {

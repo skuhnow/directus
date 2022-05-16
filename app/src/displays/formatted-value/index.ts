@@ -1,7 +1,7 @@
 import { defineDisplay } from '@skuhnow/directus-shared/utils';
 import { DisplayConfig } from '@skuhnow/directus-shared/types';
 import DisplayFormattedValue from './formatted-value.vue';
-import formatTitle from '@directus/format-title';
+import formatTitle from '@skuhnow/directus-format-title';
 
 export default defineDisplay({
 	id: 'formatted-value',

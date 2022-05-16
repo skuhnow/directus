@@ -1,4 +1,4 @@
-import { SchemaOverview } from '@directus/shared/types';
+import { SchemaOverview } from '@skuhnow/directus-shared/types';
 import { Knex } from 'knex';
 import { getDatabaseClient } from '..';
 

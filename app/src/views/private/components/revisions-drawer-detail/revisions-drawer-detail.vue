@@ -47,7 +47,7 @@ import formatLocalized from '@/utils/localized-format';
 import RevisionsDateGroup from './revisions-date-group.vue';
 import RevisionsDrawer from './revisions-drawer.vue';
 import { unexpectedError } from '@/utils/unexpected-error';
-import { abbreviateNumber } from '@directus/shared/utils';
+import { abbreviateNumber } from '@skuhnow/directus-shared/utils';
 
 export default defineComponent({
 	components: { RevisionsDrawer, RevisionsDateGroup },

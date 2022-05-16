@@ -1,5 +1,5 @@
 import { useCollectionsStore, useFieldsStore, useRelationsStore } from '@/stores';
-import { Field, Relation } from '@directus/shared/types';
+import { Field, Relation } from '@skuhnow/directus-shared/types';
 import { Collection } from '@/types';
 import { computed, Ref } from 'vue';
 

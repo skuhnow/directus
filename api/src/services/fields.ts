@@ -20,7 +20,7 @@ import { isEqual, isNil } from 'lodash';
 import { RelationsService } from './relations';
 import { getHelpers, Helpers } from '../database/helpers';
 import Keyv from 'keyv';
-import { REGEX_BETWEEN_PARENS } from '@directus/shared/constants';
+import { REGEX_BETWEEN_PARENS } from '@skuhnow/directus-shared/constants';
 
 export class FieldsService {
 	knex: Knex;

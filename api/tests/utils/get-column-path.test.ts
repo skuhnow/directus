@@ -1,6 +1,6 @@
 import { getColumnPath, ColPathProps } from '../../src/utils/get-column-path';
 import { InvalidQueryException } from '../../src/exceptions';
-import { DeepPartial } from '@directus/shared/types';
+import { DeepPartial } from '@skuhnow/directus-shared/types';
 
 /*
 {
