@@ -86,5 +86,12 @@ async function createDefaultAdmin(schema: SchemaOverview) {
 		logger.info(`No admin password provided. Defaulting to "${adminPassword}"`);
 	}
 
-	await usersService.createOne({ email: adminEmail, password: adminPassword, role, ...defaultAdminUser });
+	const payload = { email: adminEmail, password: adminPassword, token: null, role, ...defaultAdminUser };
+	const adminToken = env.ADMIN_TOKEN;
+	if (adminToken) {
+		logger.info(`Set static admin token to "${adminToken}"`);
+		payload.token = adminToken;
+	}
+
+	await usersService.createOne(payload);
 }
