@@ -37,6 +37,8 @@ export class FilesService extends ItemsService {
 	): Promise<PrimaryKey> {
 		const payload = clone(data);
 
+		payload.filename_download = payload.filename_download.replaceAll('&', '_').replaceAll(' ', '_');
+
 		if ('folder' in payload === false) {
 			const settings = await this.knex.select('storage_default_folder').from('directus_settings').first();
 
