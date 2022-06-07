@@ -1,4 +1,4 @@
-import { defineOperationApi } from '@directus/shared/utils';
+import { defineOperationApi } from '@skuhnow/directus-shared/utils';
 import { getFlowManager } from '../../flows';
 import { optionToObject } from '../../utils/operation-options';
 

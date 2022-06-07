@@ -1,4 +1,4 @@
-import { Accountability, Action, PermissionsAction, Query, SchemaOverview } from '@directus/shared/types';
+import { Accountability, Action, PermissionsAction, Query, SchemaOverview } from '@skuhnow/directus-shared/types';
 import Keyv from 'keyv';
 import { Knex } from 'knex';
 import { assign, clone, cloneDeep, pick, without } from 'lodash';

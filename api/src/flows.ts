@@ -1,4 +1,4 @@
-import * as sharedExceptions from '@directus/shared/exceptions';
+import * as sharedExceptions from '@skuhnow/directus-shared/exceptions';
 import {
 	ActionHandler,
 	FilterHandler,
@@ -8,7 +8,7 @@ import {
 	SchemaOverview,
 	Accountability,
 	Action,
-} from '@directus/shared/types';
+} from '@skuhnow/directus-shared/types';
 import { get } from 'micromustache';
 import { schedule, validate } from 'node-cron';
 import getDatabase from './database';

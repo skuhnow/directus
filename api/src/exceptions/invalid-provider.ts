@@ -1,4 +1,4 @@
-import { BaseException } from '@directus/shared/exceptions';
+import { BaseException } from '@skuhnow/directus-shared/exceptions';
 
 export class InvalidProviderException extends BaseException {
 	constructor(message = 'Invalid provider.') {

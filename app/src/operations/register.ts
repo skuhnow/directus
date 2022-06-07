@@ -1,7 +1,7 @@
 import { getRootPath } from '@/utils/get-root-path';
 import { App } from 'vue';
 import { getOperations } from './index';
-import { OperationAppConfig } from '@directus/shared/types';
+import { OperationAppConfig } from '@skuhnow/directus-shared/types';
 
 const { operationsRaw } = getOperations();
 

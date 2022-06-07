@@ -1,4 +1,4 @@
-import { ActionHandler, FilterHandler, InitHandler } from '@directus/shared/types';
+import { ActionHandler, FilterHandler, InitHandler } from '@skuhnow/directus-shared/types';
 import { ScheduledTask } from 'node-cron';
 
 export type EventHandler =

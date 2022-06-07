@@ -1,4 +1,4 @@
-import { defineOperationApi } from '@directus/shared/utils';
+import { defineOperationApi } from '@skuhnow/directus-shared/utils';
 import { MailService } from '../../services';
 import { md } from '../../utils/md';
 

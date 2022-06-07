@@ -87,8 +87,8 @@
 <script setup lang="ts">
 import { useRelationO2M, useRelationMultiple, RelationQueryMultiple, DisplayItem } from '@/composables/use-relation';
 import { parseFilter } from '@/utils/parse-filter';
-import { Field, Filter } from '@directus/shared/types';
-import { deepMap, getFieldsFromTemplate } from '@directus/shared/utils';
+import { Field, Filter } from '@skuhnow/directus-shared/types';
+import { deepMap, getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import { render } from 'micromustache';
 import { computed, inject, ref, toRefs } from 'vue';
 import { useI18n } from 'vue-i18n';

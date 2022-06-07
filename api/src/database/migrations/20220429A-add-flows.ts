@@ -1,5 +1,5 @@
 import { Knex } from 'knex';
-import { toArray } from '@directus/shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import { v4 as uuidv4 } from 'uuid';
 import { parseJSON } from '../../utils/parse-json';
 

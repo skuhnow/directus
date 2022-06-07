@@ -1,5 +1,5 @@
-import { Accountability } from '@directus/shared/types';
-import { defineOperationApi } from '@directus/shared/utils';
+import { Accountability } from '@skuhnow/directus-shared/types';
+import { defineOperationApi } from '@skuhnow/directus-shared/utils';
 import { NotificationsService } from '../../services';
 import { optionToString } from '../../utils/operation-options';
 import { getAccountabilityForRole } from '../../utils/get-accountability-for-role';

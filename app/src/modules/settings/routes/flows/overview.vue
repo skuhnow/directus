@@ -135,7 +135,7 @@ import { Sort } from '@/components/v-table/types';
 import { router } from '@/router';
 import { useFlowsStore, usePermissionsStore } from '@/stores';
 import { unexpectedError } from '@/utils/unexpected-error';
-import { FlowRaw } from '@directus/shared/types';
+import { FlowRaw } from '@skuhnow/directus-shared/types';
 import { computed, ref, Ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import SettingsNavigation from '../../components/navigation.vue';

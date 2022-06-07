@@ -1,4 +1,4 @@
-import { defineOperationApp } from '@directus/shared/utils';
+import { defineOperationApp } from '@skuhnow/directus-shared/utils';
 
 export default defineOperationApp({
 	id: 'transform',

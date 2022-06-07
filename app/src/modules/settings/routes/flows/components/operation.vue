@@ -139,7 +139,7 @@ import useClipboard from '@/composables/use-clipboard';
 import { getOperations } from '@/operations';
 import { translate } from '@/utils/translate-object-values';
 import { Vector2 } from '@/utils/vector2';
-import { FlowRaw } from '@directus/shared/types';
+import { FlowRaw } from '@skuhnow/directus-shared/types';
 import { computed, ref, toRefs } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { ATTACHMENT_OFFSET, REJECT_OFFSET, RESOLVE_OFFSET } from '../constants';

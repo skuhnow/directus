@@ -1,5 +1,5 @@
 import { validateKeys } from '../../src/utils/validate-keys';
-import { SchemaOverview } from '@directus/shared/types';
+import { SchemaOverview } from '@skuhnow/directus-shared/types';
 import { v4 as uuid } from 'uuid';
 
 const schema: SchemaOverview = {

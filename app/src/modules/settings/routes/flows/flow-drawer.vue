@@ -121,7 +121,7 @@
 import api from '@/api';
 import { useFlowsStore } from '@/stores';
 import { unexpectedError } from '@/utils/unexpected-error';
-import { TriggerType } from '@directus/shared/types';
+import { TriggerType } from '@skuhnow/directus-shared/types';
 import { computed, reactive, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { getTriggers } from './triggers';

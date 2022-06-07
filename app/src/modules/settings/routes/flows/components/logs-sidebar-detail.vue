@@ -80,7 +80,7 @@
 <script lang="ts" setup>
 import { useRevisions } from '@/composables/use-revisions';
 import { getOperations } from '@/operations';
-import { Action, FlowRaw } from '@directus/shared/types';
+import { Action, FlowRaw } from '@skuhnow/directus-shared/types';
 import { computed, ref, toRefs, unref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { getTriggers } from '../triggers';

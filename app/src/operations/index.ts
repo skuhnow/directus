@@ -1,5 +1,5 @@
 import { shallowRef, Ref } from 'vue';
-import { OperationAppConfig } from '@directus/shared/types';
+import { OperationAppConfig } from '@skuhnow/directus-shared/types';
 
 const operationsRaw: Ref<OperationAppConfig[]> = shallowRef([]);
 const operations: Ref<OperationAppConfig[]> = shallowRef([]);

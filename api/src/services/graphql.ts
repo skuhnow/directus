@@ -1,5 +1,5 @@
-import { BaseException } from '@directus/shared/exceptions';
-import { Accountability, Action, Aggregate, Filter, Query, SchemaOverview } from '@directus/shared/types';
+import { BaseException } from '@skuhnow/directus-shared/exceptions';
+import { Accountability, Action, Aggregate, Filter, Query, SchemaOverview } from '@skuhnow/directus-shared/types';
 import argon2 from 'argon2';
 import {
 	ArgumentNode,

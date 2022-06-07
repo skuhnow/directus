@@ -1,4 +1,4 @@
-import { defineOperationApi } from '@directus/shared/utils';
+import { defineOperationApi } from '@skuhnow/directus-shared/utils';
 
 type Options = {
 	milliseconds: string | number;

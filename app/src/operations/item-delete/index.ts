@@ -1,5 +1,5 @@
-import { defineOperationApp } from '@directus/shared/utils';
-import { toArray } from '@directus/shared/utils';
+import { defineOperationApp } from '@skuhnow/directus-shared/utils';
+import { toArray } from '@skuhnow/directus-shared/utils';
 
 export default defineOperationApp({
 	id: 'item-delete',

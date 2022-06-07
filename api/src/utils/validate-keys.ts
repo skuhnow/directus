@@ -1,4 +1,4 @@
-import { SchemaOverview } from '@directus/shared/types';
+import { SchemaOverview } from '@skuhnow/directus-shared/types';
 import { ForbiddenException } from '../exceptions';
 import { PrimaryKey } from '../types';
 import validateUUID from 'uuid-validate';

@@ -1,5 +1,5 @@
-import { Accountability, Permission, SchemaOverview } from '@directus/shared/types';
-import { deepMap, parseFilter, parsePreset } from '@directus/shared/utils';
+import { Accountability, Permission, SchemaOverview } from '@skuhnow/directus-shared/types';
+import { deepMap, parseFilter, parsePreset } from '@skuhnow/directus-shared/utils';
 import { cloneDeep } from 'lodash';
 import hash from 'object-hash';
 import { getCache, setSystemCache } from '../cache';

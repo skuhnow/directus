@@ -30,7 +30,7 @@ import {
 	EXTENSION_TYPES,
 	HYBRID_EXTENSION_TYPES,
 	PACK_EXTENSION_TYPE,
-} from '@directus/shared/constants';
+} from '@skuhnow/directus-shared/constants';
 import getDatabase from './database';
 import emitter, { Emitter } from './emitter';
 import env from './env';
@@ -49,7 +49,7 @@ import { Url } from './utils/url';
 import getModuleDefault from './utils/get-module-default';
 import { clone, escapeRegExp } from 'lodash';
 import chokidar, { FSWatcher } from 'chokidar';
-import { isExtensionObject, isHybridExtension, pluralize } from '@directus/shared/utils';
+import { isExtensionObject, isHybridExtension, pluralize } from '@skuhnow/directus-shared/utils';
 import { getFlowManager } from './flows';
 import globby from 'globby';
 import { EventHandler } from './types';

@@ -3,7 +3,7 @@ import { useFieldsStore, useRelationsStore } from '@/stores';
 import adjustFieldsForDisplays from '@/utils/adjust-fields-for-displays';
 import { getRelatedCollection } from '@/utils/get-related-collection';
 import { renderPlainStringTemplate } from '@/utils/render-string-template';
-import { defineDisplay, getFieldsFromTemplate } from '@directus/shared/utils';
+import { defineDisplay, getFieldsFromTemplate } from '@skuhnow/directus-shared/utils';
 import { get, set } from 'lodash';
 import DisplayTranslations from './translations.vue';
 import { i18n } from '@/lang';

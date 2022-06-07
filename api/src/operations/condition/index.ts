@@ -1,5 +1,5 @@
-import { Filter } from '@directus/shared/types';
-import { defineOperationApi, validatePayload } from '@directus/shared/utils';
+import { Filter } from '@skuhnow/directus-shared/types';
+import { defineOperationApi, validatePayload } from '@skuhnow/directus-shared/utils';
 
 type Options = {
 	filter: Filter;

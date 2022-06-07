@@ -1,5 +1,5 @@
-import { Accountability, PrimaryKey } from '@directus/shared/types';
-import { defineOperationApi, toArray } from '@directus/shared/utils';
+import { Accountability, PrimaryKey } from '@skuhnow/directus-shared/types';
+import { defineOperationApi, toArray } from '@skuhnow/directus-shared/utils';
 import { ItemsService } from '../../services';
 import { Item } from '../../types';
 import { optionToObject } from '../../utils/operation-options';

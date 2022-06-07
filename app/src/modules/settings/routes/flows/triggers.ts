@@ -1,4 +1,4 @@
-import { DeepPartial, Field, FlowRaw, TriggerType, Width } from '@directus/shared/types';
+import { DeepPartial, Field, FlowRaw, TriggerType, Width } from '@skuhnow/directus-shared/types';
 import { useI18n } from 'vue-i18n';
 import { getPublicURL } from '../../../../utils/get-root-path';
 

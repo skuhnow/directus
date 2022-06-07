@@ -1,4 +1,4 @@
-import { FlowRaw } from '@directus/shared/types';
+import { FlowRaw } from '@skuhnow/directus-shared/types';
 import { getMessenger, Messenger } from '../messenger';
 import { AbstractServiceOptions, Item, MutationOptions, PrimaryKey } from '../types';
 import { ItemsService } from './items';

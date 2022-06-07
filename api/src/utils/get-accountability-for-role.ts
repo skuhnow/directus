@@ -1,4 +1,4 @@
-import { Accountability, SchemaOverview } from '@directus/shared/types';
+import { Accountability, SchemaOverview } from '@skuhnow/directus-shared/types';
 import { getPermissions } from './get-permissions';
 import { InvalidConfigException } from '../exceptions';
 import { Knex } from 'knex';

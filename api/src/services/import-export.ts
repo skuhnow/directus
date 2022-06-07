@@ -1,5 +1,5 @@
-import { Accountability, Query, SchemaOverview } from '@directus/shared/types';
-import { toArray } from '@directus/shared/utils';
+import { Accountability, Query, SchemaOverview } from '@skuhnow/directus-shared/types';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import { queue } from 'async';
 import csv from 'csv-parser';
 import destroyStream from 'destroy';

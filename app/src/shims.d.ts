@@ -34,7 +34,7 @@ declare module 'frappe-charts/src/js/charts/AxisChart' {
 }
 
 declare module '@directus-extensions-operation' {
-	import { OperationAppConfig } from '@directus/shared/types';
+	import { OperationAppConfig } from '@skuhnow/directus-shared/types';
 	const operations: OperationAppConfig[];
 	export default operations;
 }
