@@ -2,9 +2,9 @@ import { Snackbar, SnackbarRaw } from '@/types';
 import { reverse, sortBy } from 'lodash';
 import { nanoid } from 'nanoid';
 import { defineStore } from 'pinia';
-import { Notification } from '@skuhnow/directus-shared/types';
-import { useUserStore } from '.';
+import { Notification } from '@directus/shared/types';
 import api from '@/api';
+import { useUserStore } from './user';
 
 export const useNotificationsStore = defineStore({
 	id: 'notificationsStore',
