@@ -7,7 +7,7 @@ import { validateBatch } from '../middleware/validate-batch';
 import { AuthenticationService, MetaService, UsersService, RolesService, TFAService } from '../services';
 import { PrimaryKey } from '../types';
 import asyncHandler from '../utils/async-handler';
-import { Role } from '@directus/shared/types';
+import { Role } from '@skuhnow/directus-shared/types';
 
 const router = express.Router();
 

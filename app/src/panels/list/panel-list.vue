@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 import { useFieldsStore } from '@/stores';
-import { Filter } from '@directus/shared/types';
+import { Filter } from '@skuhnow/directus-shared/types';
 import { computed } from 'vue';
 
 const props = withDefaults(

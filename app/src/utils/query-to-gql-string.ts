@@ -1,6 +1,6 @@
 import { useFieldsStore } from '@/stores';
-import { Query } from '@directus/shared/types';
-import { toArray } from '@directus/shared/utils';
+import { Query } from '@skuhnow/directus-shared/types';
+import { toArray } from '@skuhnow/directus-shared/utils';
 import { jsonToGraphQLQuery } from 'json-to-graphql-query';
 import { isEmpty, pick, set, omitBy, isUndefined } from 'lodash';
 

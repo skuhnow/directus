@@ -1,4 +1,4 @@
-import { parseJSON } from '@directus/shared/utils';
+import { parseJSON } from '@skuhnow/directus-shared/utils';
 import IORedis from 'ioredis';
 import env from './env';
 import { getConfigFromEnv } from './utils/get-config-from-env';

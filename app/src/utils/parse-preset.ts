@@ -1,6 +1,6 @@
 import { useUserStore } from '@/stores';
-import { Accountability, Role, User } from '@directus/shared/types';
-import { parsePreset as parsePresetShared } from '@directus/shared/utils';
+import { Accountability, Role, User } from '@skuhnow/directus-shared/types';
+import { parsePreset as parsePresetShared } from '@skuhnow/directus-shared/utils';
 
 export function parsePreset(preset: Record<string, any> | null): Record<string, any> {
 	const { currentUser } = useUserStore();

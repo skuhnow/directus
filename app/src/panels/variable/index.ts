@@ -1,4 +1,4 @@
-import { definePanel } from '@directus/shared/utils';
+import { definePanel } from '@skuhnow/directus-shared/utils';
 import PanelVariable from './panel-variable.vue';
 import { useI18n } from 'vue-i18n';
 import { FIELD_TYPES_SELECT } from '@/constants';

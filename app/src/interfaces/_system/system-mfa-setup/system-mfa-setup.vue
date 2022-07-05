@@ -89,7 +89,7 @@ import { useI18n } from 'vue-i18n';
 import { defineComponent, ref, watch, computed, nextTick } from 'vue';
 import { useUserStore } from '@/stores';
 import { useTFASetup } from '@/composables/use-tfa-setup';
-import { User } from '@directus/shared/types';
+import { User } from '@skuhnow/directus-shared/types';
 
 export default defineComponent({
 	props: {

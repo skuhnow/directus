@@ -46,7 +46,7 @@ import { defineComponent, nextTick, onMounted, ref, watch } from 'vue';
 import { useTFASetup } from '@/composables/use-tfa-setup';
 import { useAppStore, useUserStore } from '@/stores';
 import { router } from '@/router';
-import { User } from '@directus/shared/types';
+import { User } from '@skuhnow/directus-shared/types';
 
 export default defineComponent({
 	setup() {

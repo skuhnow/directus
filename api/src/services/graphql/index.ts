@@ -88,7 +88,7 @@ import { GraphQLGeoJSON } from './types/geojson';
 import { GraphQLStringOrFloat } from './types/string-or-float';
 import { GraphQLVoid } from './types/void';
 
-import { PrimaryKey } from '@directus/shared/types';
+import { PrimaryKey } from '@skuhnow/directus-shared/types';
 
 import { addPathToValidationError } from './utils/add-path-to-validation-error';
 

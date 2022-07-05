@@ -1,5 +1,5 @@
-import { getSimpleHash } from '@directus/shared/utils';
-import { Query } from '@directus/shared/types';
+import { getSimpleHash } from '@skuhnow/directus-shared/utils';
+import { Query } from '@skuhnow/directus-shared/types';
 import { computed, ComputedRef, Ref } from 'vue';
 import { merge } from 'lodash';
 

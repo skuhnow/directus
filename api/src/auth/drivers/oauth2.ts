@@ -1,5 +1,5 @@
-import { BaseException } from '@directus/shared/exceptions';
-import { parseJSON } from '@directus/shared/utils';
+import { BaseException } from '@skuhnow/directus-shared/exceptions';
+import { parseJSON } from '@skuhnow/directus-shared/utils';
 import { Router } from 'express';
 import flatten from 'flat';
 import jwt from 'jsonwebtoken';
