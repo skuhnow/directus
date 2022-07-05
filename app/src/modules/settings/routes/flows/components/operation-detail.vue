@@ -100,6 +100,7 @@ const options = ref<Record<string, any>>(props.operation?.options ?? {});
 const operationType = ref<string | undefined>(props.operation?.type);
 const operationKey = ref<string | null>(props.operation?.key ?? null);
 const operationName = ref<string | null>(props.operation?.name ?? null);
+
 const saving = ref(false);
 
 const isOperationKeyUnique = computed(
@@ -112,6 +113,19 @@ const isOperationKeyUnique = computed(
 const saveDisabled = computed(() => {
 	return !operationType.value || !isOperationKeyUnique.value;
 });
+
+watch(
+	() => props.operation,
+	(operation) => {
+		if (!operation) return;
+
+		options.value = operation.options;
+		operationType.value = operation.type;
+		operationKey.value = operation.key;
+		operationName.value = operation.name;
+	},
+	{ immediate: true, deep: true }
+);
 
 watch(operationType, () => {
 	options.value = {};
@@ -139,7 +153,9 @@ const selectedOperation = computed(() => getOperation(operationType.value));
 const generatedName = computed(() => (selectedOperation.value ? selectedOperation.value?.name : t('operation_name')));
 
 const generatedKey = computed(() =>
-	selectedOperation.value ? selectedOperation.value?.id + '_' + generateSuffix() : t('operation_key')
+	selectedOperation.value
+		? slugify(selectedOperation.value?.id + '_' + generateSuffix(), { separator: '_' })
+		: t('operation_key')
 );
 
 const { operations } = getOperations();

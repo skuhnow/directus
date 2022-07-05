@@ -53,6 +53,7 @@ import { isExtensionObject, isHybridExtension, pluralize } from '@skuhnow/direct
 import { getFlowManager } from './flows';
 import globby from 'globby';
 import { EventHandler } from './types';
+import { JobQueue } from './utils/job-queue';
 
 let extensionManager: ExtensionManager | undefined;
 
@@ -95,6 +96,7 @@ class ExtensionManager {
 	private apiEmitter: Emitter;
 	private endpointRouter: Router;
 
+	private reloadQueue: JobQueue;
 	private watcher: FSWatcher | null = null;
 
 	constructor() {
@@ -102,6 +104,8 @@ class ExtensionManager {
 
 		this.apiEmitter = new Emitter();
 		this.endpointRouter = Router();
+
+		this.reloadQueue = new JobQueue();
 	}
 
 	public async initialize(options: Partial<Options> = {}): Promise<void> {
@@ -124,35 +128,37 @@ class ExtensionManager {
 		}
 	}
 
-	public async reload(): Promise<void> {
-		if (this.isLoaded) {
-			logger.info('Reloading extensions');
+	public reload(): void {
+		this.reloadQueue.enqueue(async () => {
+			if (this.isLoaded) {
+				logger.info('Reloading extensions');
 
-			const prevExtensions = clone(this.extensions);
+				const prevExtensions = clone(this.extensions);
 
-			await this.unload();
-			await this.load();
+				await this.unload();
+				await this.load();
 
-			const added = this.extensions.filter(
-				(extension) => !prevExtensions.some((prevExtension) => extension.path === prevExtension.path)
-			);
-			const removed = prevExtensions.filter(
-				(prevExtension) => !this.extensions.some((extension) => prevExtension.path === extension.path)
-			);
+				const added = this.extensions.filter(
+					(extension) => !prevExtensions.some((prevExtension) => extension.path === prevExtension.path)
+				);
+				const removed = prevExtensions.filter(
+					(prevExtension) => !this.extensions.some((extension) => prevExtension.path === extension.path)
+				);
 
-			this.updateWatchedExtensions(added, removed);
+				this.updateWatchedExtensions(added, removed);
 
-			const addedExtensions = added.map((extension) => extension.name);
-			const removedExtensions = removed.map((extension) => extension.name);
-			if (addedExtensions.length > 0) {
-				logger.info(`Added extensions: ${addedExtensions.join(', ')}`);
+				const addedExtensions = added.map((extension) => extension.name);
+				const removedExtensions = removed.map((extension) => extension.name);
+				if (addedExtensions.length > 0) {
+					logger.info(`Added extensions: ${addedExtensions.join(', ')}`);
+				}
+				if (removedExtensions.length > 0) {
+					logger.info(`Removed extensions: ${removedExtensions.join(', ')}`);
+				}
+			} else {
+				logger.warn('Extensions have to be loaded before they can be reloaded');
 			}
-			if (removedExtensions.length > 0) {
-				logger.info(`Removed extensions: ${removedExtensions.join(', ')}`);
-			}
-		} else {
-			logger.warn('Extensions have to be loaded before they can be reloaded');
-		}
+		});
 	}
 
 	public getExtensionsList(type?: ExtensionType): string[] {
@@ -350,7 +356,7 @@ class ExtensionManager {
 
 				const config = getModuleDefault(endpointInstance);
 
-				this.registerEndpoint(config, endpointPath, this.endpointRouter);
+				this.registerEndpoint(config, endpointPath, endpoint.name, this.endpointRouter);
 			} catch (error: any) {
 				logger.warn(`Couldn't register endpoint "${endpoint.name}"`);
 				logger.warn(error);
@@ -461,9 +467,9 @@ class ExtensionManager {
 		this.apiExtensions.hooks.push(hookHandler);
 	}
 
-	private registerEndpoint(config: EndpointConfig, path: string, router: Router) {
+	private registerEndpoint(config: EndpointConfig, path: string, name: string, router: Router) {
 		const register = typeof config === 'function' ? config : config.handler;
-		const routeName = typeof config === 'function' ? config.name : config.id;
+		const routeName = typeof config === 'function' ? name : config.id;
 
 		const scopedRouter = express.Router();
 		router.use(`/${routeName}`, scopedRouter);

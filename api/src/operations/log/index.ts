@@ -1,6 +1,5 @@
-import { defineOperationApi } from '@skuhnow/directus-shared/utils';
+import { defineOperationApi, optionToString } from '@skuhnow/directus-shared/utils';
 import logger from '../../logger';
-import { optionToString } from '../../utils/operation-options';
 
 type Options = {
 	message: unknown;

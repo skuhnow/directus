@@ -23,15 +23,19 @@ identifier: Identifikátor
 avatar: Avatar
 application: Aplikace
 default_provider: Výchozí
+method: Metoda
 published: Zveřejněno
 draft: Návrh
 archived: Archivováno
 modules: Moduly
 module_bar: Panel modulů
+logs: Logy
 reset_width: Obnovit šířku
 tile_size: Velikost dlaždice
 edit_field: Upravit pole
 conditions: Podmínky
+location: Poloha
+input: Vstup
 maps: Mapy
 switch_user: Přepnout uživatele
 item_creation: Vytvoření položky
@@ -713,7 +717,7 @@ replace_file: Nahradit soubor
 no_results: Bez výsledků
 no_results_copy: Upravte nebo vymažte vyhledávací filtry pro zobrazení výsledků.
 clear_filters: Vymazat filtry
-saves_automatically: Automaticky uložit
+saves_automatically: Ukládá se automaticky
 role: Role
 edit_role: Upravit roli
 rule: Pravidlo
@@ -727,6 +731,7 @@ on_create: Při vytvoření
 on_update: Při úpravě
 read: Číst
 update: Úpravy
+delete: Odstranit
 select_fields: Vybrat pole
 format_text: Formátovat text
 format_value: Formátovat hodnotu
@@ -737,6 +742,10 @@ toggle: Přepínač
 icon_on: Ikona zapnuto
 icon_off: Ikona vypnuto
 label: Popisek
+trigger: Spouštěč
+flow_name: Jméno
+flow_tracking_activity: Pouze sledovat aktivitu
+flow_tracking_null: Nesledovat nic
 insights: Přehledy
 dashboard: Nástěnka
 panel: Panel
@@ -754,9 +763,10 @@ suffix_placeholder: Text za hodnotou...
 decimals_placeholder: Počet desetinných míst...
 no_dashboards: Žádné nástěnky
 no_dashboards_copy: Zatím nemáte žádné nástěnky.
-no_data: Žádná data
 create_dashboard: Vytvořit nástěnku
 dashboard_name: Název nástěnky
+no_data: Žádná data
+accountability: Odpovědnost
 full_screen: Celá obrazovka
 full_text_search: Full-Text vyhledávání
 edit_panels: Upravit panely
@@ -858,6 +868,7 @@ settings_presets: Předvolby a záložky
 settings_translation_strings: Překlady
 one_or_more_options_are_missing: Chybí jedna nebo více možností
 scope: Rozsah
+actions: Akce
 select: Vybrat...
 layout: Rozvržení
 tree_view: Stromové zobrazení
@@ -867,6 +878,7 @@ preset_search_placeholder: Hledat dotaz...
 editing_preset: Úprava předvolby
 layout_preview: Náhled rozvržení
 layout_setup: Nastavení rozvržení
+data: Údaje
 unsaved_changes: Neuložené změny
 unsaved_changes_copy: Jste si jisti, že chcete opustit tuto stránku?
 discard_changes: Ano, odejít bez uložení
@@ -931,9 +943,9 @@ directus_collection:
   directus_files: Metadata pro všechny spravované soubory
   directus_folders: Poskytuje virtuální adresáře souborů
   directus_migrations: Jakou verzi databáze používáte
+  directus_notifications: Oznámení zaslaná uživatelům
   directus_panels: Jednotlivé panely uvnitř nástěnek
   directus_permissions: Přístupová práva pro každou roli
-  directus_notifications: Oznámení zaslaná uživatelům
   directus_presets: Předvolby pro výchozí nastavení kolekce a záložky
   directus_relations: Konfigurace vztahů a metadata
   directus_revisions: Snímky dat pro všechny aktivity
@@ -1519,6 +1531,7 @@ interfaces:
     description: Vytvořit více záznamů ve stejné struktuře
     edit_fields: Upravit pole
     add_label: 'Štítek "Vytvořit nový"'
+    sort: Seřadit
     field_name_placeholder: Zadejte název pole...
     field_note_placeholder: Zadejte poznámku k poli...
     incompatible_data: Aktuální data nejsou kompatibilní s rozhraním opakovače a budou přepsána při přidávání položek do opakovače
@@ -1542,7 +1555,7 @@ interfaces:
     add_tags: Přidat značku a stiskněte Enter...
   input:
     input: Vstup
-    description: Ručně zadejte hodnotu
+    description: Ruční zadat hodnotu
     trim: Oříznout
     trim_label: Oříznout začátek a konec
     mask: Maskovaná
@@ -1573,6 +1586,9 @@ interfaces:
     display_template: Šablona zobrazení
     no_collection: Žádná kolekce
     toggle_split_view: Přepnout rozdělené zobrazení
+    enable: Povolit
+    user_language: Použít aktuální jazyk uživatele
+    default_language: Výchozí jazyk
     language_field: Pole indikátoru jazyka
   list-o2m-tree-view:
     description: Zobrazení stromu pro vnořené rekurentní položky 1:N
@@ -1659,6 +1675,7 @@ displays:
     short: Krátký
     relative: Relativní
     relative_label: 'Zobrazit relativní čas, např.: před 5 minutami'
+    suffix: Přípona
   file:
     file: Soubor
     description: Zobrazit soubory
@@ -1880,3 +1897,16 @@ panels:
     bottom: Dole
     monochrome: Monochromatický
     monochrome_color: Monochromatická barva
+triggers:
+  webhook:
+    method: Metoda
+operations:
+  notification:
+    recipient: Uživatel
+  request:
+    url: URL
+    method: Metoda
+    data: Údaje
+    header: Hlavička
+  trigger:
+    data: Údaje

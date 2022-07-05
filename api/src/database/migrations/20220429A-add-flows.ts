@@ -1,7 +1,6 @@
 import { Knex } from 'knex';
-import { toArray } from '@skuhnow/directus-shared/utils';
+import { parseJSON, toArray } from '@skuhnow/directus-shared/utils';
 import { v4 as uuidv4 } from 'uuid';
-import { parseJSON } from '../../utils/parse-json';
 
 export async function up(knex: Knex): Promise<void> {
 	await knex.schema.createTable('directus_flows', (table) => {

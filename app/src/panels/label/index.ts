@@ -1,5 +1,5 @@
-import PanelLabel from './label.vue';
 import { definePanel } from '@skuhnow/directus-shared/utils';
+import PanelLabel from './panel-label.vue';
 
 export default definePanel({
 	id: 'label',

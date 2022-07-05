@@ -1,5 +1,4 @@
-import { defineOperationApi } from '@skuhnow/directus-shared/utils';
-import { parseJSON } from '../../utils/parse-json';
+import { defineOperationApi, parseJSON } from '@skuhnow/directus-shared/utils';
 
 type Options = {
 	json: string;

@@ -1,9 +1,8 @@
 import { Accountability, Aggregate, Filter, Query } from '@skuhnow/directus-shared/types';
-import { parseFilter } from '@skuhnow/directus-shared/utils';
+import { parseFilter, parseJSON } from '@skuhnow/directus-shared/utils';
 import { flatten, get, isPlainObject, merge, set } from 'lodash';
 import logger from '../logger';
 import { Meta } from '../types';
-import { parseJSON } from './parse-json';
 
 export function sanitizeQuery(rawQuery: Record<string, any>, accountability?: Accountability | null): Query {
 	const query: Query = {};
