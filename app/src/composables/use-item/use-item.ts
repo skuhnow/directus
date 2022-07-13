@@ -13,7 +13,7 @@ import { AxiosResponse } from 'axios';
 import { merge } from 'lodash';
 import { computed, ComputedRef, Ref, ref, watch } from 'vue';
 import { usePermissions } from '../use-permissions';
-import { Field, Relation } from '@directus/shared/types';
+import { Field, Relation } from '@skuhnow/directus-shared/types';
 
 type UsableItem = {
 	edits: Ref<Record<string, any>>;
