@@ -59,6 +59,7 @@ export class SamlAuthDriver extends LocalAuthDriver {
 			first_name: payload.givenName,
 			last_name: payload.sn,
 			email: payload.email,
+			language: payload.preferredLanguage,
 			external_identifier: identifier,
 			role: await this.resolveRole(payload.roles),
 		});
